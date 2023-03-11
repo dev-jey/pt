@@ -14,6 +14,7 @@ class About(models.Model):
 	image = models.CharField(max_length=1000, default='')
 	dribble = models.CharField(max_length=1000, default='')
 	instagram = models.CharField(max_length=1000, default='')
+	upwork = models.CharField(max_length=1000, default='')
 	behance = models.CharField(max_length=1000, default='')
 	role = models.CharField(max_length=1000, default='Designer')
 	description = HTMLField()
@@ -51,6 +52,10 @@ class ProjectType(models.Model):
 	def __str__(self):
 		return self.name
 
+	@property
+	def non_verbose_name(self):
+		return self.name.replace(" ", "")
+
 class ProjectTag(models.Model):
 	name = models.CharField(max_length=1055, blank=True, null=True)
 
@@ -69,6 +74,7 @@ class Section(models.Model):
 class Project(models.Model):
 	title = models.CharField(max_length=1000)
 	role = models.CharField(max_length=1000, default='')
+	industry = models.CharField(max_length=1000, default='')
 	description = HTMLField()
 	sections = models.ManyToManyField(Section)
 	tags = models.ManyToManyField(ProjectTag)
@@ -77,7 +83,8 @@ class Project(models.Model):
 	slug = models.SlugField(db_index=True, max_length=10000, default='',
 							editable=False,
 							unique=True, blank=True, primary_key=True)
-	image = models.CharField(max_length=1055, blank=True, null=True)
+	banner_image = models.CharField(max_length=1055, blank=True, null=True, help_text="To appear as the big image on top of the page when you open a single project")
+	image = models.CharField(max_length=1055, blank=True, null=True, help_text="To appear as the preview image on the home page")
 	video = models.CharField(max_length=1055, blank=True, null=True)
 	active = models.BooleanField(default=False)
 	link = models.CharField(max_length=1000)

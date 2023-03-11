@@ -5,5 +5,5 @@ from django.shortcuts import redirect
 
 urlpatterns = [
     path('', views.get_home, name='home'),
-    path('project/<int:id>', views.get_project, name='project-view'),
+    path('project/<id>', views.get_project, name='project-view'),
 ]

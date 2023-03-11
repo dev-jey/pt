@@ -16,7 +16,7 @@
 		<link rel="apple-touch-icon" sizes="72x72" href="{% static 'images/apple-touch-icon-72x72.png' %}">
 		<link rel="apple-touch-icon" sizes="114x114" href="{% static 'images/apple-touch-icon-114x114.png' %}">
 
-		<title>Danieli</title>
+		<title>{{about.name}} | Product Designer</title>
 
 		<!-- fonts -->
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
@@ -58,27 +58,21 @@
 			<!-- logo start -->
 			<div class="header-logo js-midnight-color js-headroom">
 				<div class="hidden-box">
-					<a href="index.html" class="header-logo__box js-pointer-large js-animsition-link">
+					<a href="/" class="header-logo__box js-pointer-large js-animsition-link">
 						<img class="header-logo__img white" src="{% static 'images/logo/logo-white.png' %}" alt="logo">
 						<img class="header-logo__img black" src="{% static 'images/logo/logo-black.png' %}" alt="logo">
 					</a>
 				</div>
 			</div><!-- logo end -->
 
-			<!-- menu-icon start -->
-			<div class="menu-icon js-menu-open-close js-pointer-large js-midnight-color js-headroom">
-				<div class="menu-icon__box">
-					<span class="menu-icon__inner"></span>
-					<span class="menu-icon__close"></span>
-				</div>
-			</div><!-- menu-icon end -->
 
 			<!-- header-contact start -->
 			<div class="header-contact js-midnight-color js-headroom">
 				<div class="header-contact__flex">
 					<div class="header-contact__anim">
-						<a href="#" class="header-contact__btn vertical-text center js-pointer-large">
-							<span class="vertical-text__inner"><i class="far fa-comment-dots"></i> Get in touch</span>
+						<a href="mailto:danruto59@gmail.com" class="header-contact__btn vertical-text center js-pointer-large">
+							<span class="vertical-text__inner"><i class="far fa-comment-dots"></i> 
+								Get in touch</span>
 						</a>
 					</div>
 				</div>
@@ -89,375 +83,35 @@
 				<ul class="list list_center list_margin-20px hidden-box">
 					<li class="list__item">
 						<div class="hidden-box d-inline-block">
-							<a href="#" class="anim-slide js-pointer-small">
-								<i class="fab fa-facebook-f"></i>
-							</a>
-						</div>
-					</li>
-					<li class="list__item">
-						<div class="hidden-box d-inline-block">
-							<a href="#" class="anim-slide tr-delay-02 js-pointer-small">
-								<i class="fab fa-twitter"></i>
-							</a>
-						</div>
-					</li>
-					<li class="list__item">
-						<div class="hidden-box d-inline-block">
-							<a href="#" class="anim-slide tr-delay-04 js-pointer-small">
+							<a href="{{about.instagram}}" class="anim-slide tr-delay-04 js-pointer-small" target="_blank">
 								<i class="fab fa-instagram"></i>
 							</a>
 						</div>
 					</li>
 					<li class="list__item">
 						<div class="hidden-box d-inline-block">
-							<a href="#" class="anim-slide tr-delay-06 js-pointer-small">
+							<a href="{{about.behance}}" class="anim-slide tr-delay-06 js-pointer-small" target="_blank">
 								<i class="fab fa-behance"></i>
 							</a>
 						</div>
 					</li>
 					<li class="list__item">
 						<div class="hidden-box d-inline-block">
-							<a href="#" class="anim-slide tr-delay-08 js-pointer-small">
+							<a href="{{about.dribble}}" class="anim-slide tr-delay-08 js-pointer-small" target="_blank">
 								<i class="fab fa-dribbble"></i>
 							</a>
 						</div>
 					</li>
 					<li class="list__item">
 						<div class="hidden-box d-inline-block">
-							<a href="#" class="anim-slide tr-delay-10 js-pointer-small">
-								<i class="fab fa-youtube"></i>
+							<a href="{{about.upwork}}" class="anim-slide tr-delay-10 js-pointer-small">
+								<img src="{% static 'images/about/cib_upwork.svg' %}" alt="" style="width: 14px;"/>
 							</a>
 						</div>
 					</li>
 				</ul>
 			</div><!-- header-social end -->
 		</header><!-- header end -->
-
-		<!-- navigation start -->
-		<nav class="nav-container pos-rel js-dropdown-active-box">
-			<!-- pos-rel start -->
-			<div class="pos-rel height-100perc">
-				<!-- dropdown close btn start -->
-				<div class="dropdown-close">
-					<div class="dropdown-close__inner js-dropdown-close js-pointer-large">
-						<span class="dropdown-close__arrow"></span>
-					</div>
-				</div><!-- dropdown close btn end -->
-
-				<!-- js-nav-slider-bg start -->
-				<div class="js-nav-slider-bg">
-					<!-- swiper-wrapper start -->
-					<div class="swiper-wrapper">
-						<!-- swiper-slide start -->
-						<div class="swiper-slide">
-							<div class="nav-slide-bg" style="background-image:url(/static/images/projects/speakers/revolt-BMest61rcqs-unsplash.jpg)"></div>
-							<div class="bg-overlay-black"></div>
-						</div><!-- swiper-slide end -->
-						<!-- swiper-slide start -->
-						<div class="swiper-slide">
-							<div class="nav-slide-bg" style="background-image:url(/static/images/projects/sneakers/revolt-164_6wVEHfI-unsplash.jpg)"></div>
-							<div class="bg-overlay-black"></div>
-						</div><!-- swiper-slide end -->
-						<!-- swiper-slide start -->
-						<div class="swiper-slide">
-							<div class="nav-slide-bg" style="background-image:url(/static/images/projects/black-bike/josh-nuttall-pIwu5XNvXpk-unsplash.jpg)"></div>
-							<div class="bg-overlay-black"></div>
-						</div><!-- swiper-slide end -->
-						<!-- swiper-slide start -->
-						<div class="swiper-slide">
-							<div class="nav-slide-bg" style="background-image:url(/static/images/projects/pexels/woman-in-black-sexy-top-2825034.jpg)"></div>
-							<div class="bg-overlay-black"></div>
-						</div><!-- swiper-slide end -->
-						<!-- swiper-slide start -->
-						<div class="swiper-slide">
-							<div class="nav-slide-bg" style="background-image:url(/static/images/projects/furniture/goashape-RvyJGaoaWrs-unsplash.jpg)"></div>
-							<div class="bg-overlay-black"></div>
-						</div><!-- swiper-slide end -->
-					</div><!-- swiper-wrapper end -->
-				</div><!-- js-nav-slider-bg end -->
-
-				<!-- menu-box start -->
-				<ul class="menu-box">
-					<!-- nav-btn-box start -->
-					<li class="nav-btn-box js-dropdown-open">
-						<a class="nav-btn large dropdown-hidden-btn js-pointer-large">
-							<span class="nav-btn__inner" data-text="Home">Home</span>
-						</a>
-
-						<!-- dropdown start -->
-						<ul class="menu-box dropdown js-dropdown">
-							<li class="nav-btn-box">
-								<a href="home_creative-agency.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Creative agency">Creative agency</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="home_interior-design.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Interior design">Interior design</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="home_corporate.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Corporate">Corporate</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="home_freelancer.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Freelancer">Freelancer</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="home_musician.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Musician">Musician</span>
-								</a>
-							</li>
-						</ul><!-- dropdown end -->
-					</li><!-- nav-btn-box end -->
-
-					<!-- nav-btn-box start -->
-					<li class="nav-btn-box js-dropdown-open">
-						<a class="nav-btn large dropdown-hidden-btn js-pointer-large">
-							<span class="nav-btn__inner" data-text="Pages">Pages</span>
-						</a>
-
-						<!-- dropdown start -->
-						<ul class="menu-box dropdown js-dropdown">
-							<li class="nav-btn-box">
-								<a href="pages_about-us.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="About us">About us</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="pages_who-we-are.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Who we are">Who we are</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="pages_what-we-do.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="What We Do">What We Do</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="pages_agency.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Agency">Agency</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="pages_services.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Services">Services</span>
-								</a>
-							</li>
-						</ul><!-- dropdown end -->
-					</li><!-- nav-btn-box end -->
-
-					<!-- nav-btn-box start -->
-					<li class="nav-btn-box js-dropdown-open">
-						<a class="nav-btn large dropdown-hidden-btn js-pointer-large">
-							<span class="nav-btn__inner" data-text="Portfolio">Portfolio</span>
-						</a>
-
-						<!-- dropdown start -->
-						<ul class="menu-box dropdown js-dropdown">
-							<li class="nav-btn-box">
-								<a href="portfolio_parallax.html" class="nav-btn small js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Parallax">Parallax</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="portfolio_parallax-2.html" class="nav-btn small js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Parallax 2">Parallax 2</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="portfolio_freemode.html" class="nav-btn small js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Freemode">Freemode</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="portfolio_columns.html" class="nav-btn small js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Columns">Columns</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="portfolio_columns-parallax.html" class="nav-btn small js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Columns parallax">Columns parallax</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="portfolio_fade.html" class="nav-btn small js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Fade">Fade</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="portfolio_fade-horizontal.html" class="nav-btn small js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Fade horizontal">Fade horizontal</span>
-								</a>
-							</li>
-						</ul><!-- dropdown end -->
-					</li><!-- nav-btn-box end -->
-
-					<!-- nav-btn-box start -->
-					<li class="nav-btn-box js-dropdown-slider-open">
-						<a class="nav-btn large dropdown-hidden-btn js-pointer-large">
-							<span class="nav-btn__inner" data-text="Projects">Projects</span>
-						</a>
-
-						<!-- dropdown start -->
-						<div class="dropdown js-dropdown">
-							<!-- js-nav-slider start -->
-							<div class="js-nav-slider">
-								<!-- swiper-wrapper start -->
-								<ul class="swiper-wrapper">
-									<!-- swiper-slide start -->
-									<li class="nav-btn-box swiper-slide">
-										<div class="hidden-box">
-											<a href="{% url 'project-view' id=1 %}" class="nav-btn small js-animsition-link js-pointer-large">
-												<span class="nav-btn__inner" data-text="Speakers">Speakers</span>
-											</a>
-										</div>
-									</li><!-- swiper-slide end -->
-									<!-- swiper-slide start -->
-									<li class="nav-btn-box swiper-slide">
-										<div class="hidden-box">
-											<a href="{% url 'project-view' id=1 %}" class="nav-btn small js-animsition-link js-pointer-large">
-												<span class="nav-btn__inner" data-text="Sneakers">Sneakers</span>
-											</a>
-										</div>
-									</li><!-- swiper-slide end -->
-									<!-- swiper-slide start -->
-									<li class="nav-btn-box swiper-slide">
-										<div class="hidden-box">
-											<a href="{% url 'project-view' id=1 %}" class="nav-btn small js-animsition-link js-pointer-large">
-												<span class="nav-btn__inner" data-text="Black Bike">Black Bike</span>
-											</a>
-										</div>
-									</li><!-- swiper-slide end -->
-									<!-- swiper-slide start -->
-									<li class="nav-btn-box swiper-slide">
-										<div class="hidden-box">
-											<a href="{% url 'project-view' id=1 %}" class="nav-btn small js-animsition-link js-pointer-large">
-												<span class="nav-btn__inner" data-text="Pexels">Pexels</span>
-											</a>
-										</div>
-									</li><!-- swiper-slide end -->
-									<!-- swiper-slide start -->
-									<li class="nav-btn-box swiper-slide">
-										<div class="hidden-box">
-											<a href="{% url 'project-view' id=1 %}" class="nav-btn small js-animsition-link js-pointer-large">
-												<span class="nav-btn__inner" data-text="Furniture">Furniture</span>
-											</a>
-										</div>
-									</li><!-- swiper-slide end -->
-								</ul><!-- swiper-wrapper end -->
-
-								<!-- swiper-button-prev start -->
-								<div class="swiper-button-prev-box">
-									<div class="dropdown-slider-controls">
-										<div class="swiper-button-prev"></div>
-									</div>
-								</div><!-- swiper-button-prev end -->
-								<!-- swiper-button-next start -->
-								<div class="swiper-button-next-box">
-									<div class="dropdown-slider-controls">
-										<div class="swiper-button-next"></div>
-									</div>
-								</div><!-- swiper-button-next end -->
-
-								<!-- swiper-pagination start -->
-								<div class="pagination-box">
-									<div class="dropdown-slider-controls">
-										<div class="swiper-pagination counter-pagination"></div>
-									</div>
-								</div><!-- swiper-pagination end -->
-							</div><!-- js-nav-slider end -->
-						</div><!-- dropdown end -->
-					</li><!-- nav-btn-box end -->
-
-					<!-- nav-btn-box start -->
-					<li class="nav-btn-box js-dropdown-open">
-						<a class="nav-btn large dropdown-hidden-btn js-pointer-large">
-							<span class="nav-btn__inner" data-text="Blog">Blog</span>
-						</a>
-
-						<!-- dropdown start -->
-						<ul class="menu-box dropdown js-dropdown">
-							<li class="nav-btn-box">
-								<a href="blog_sidebar.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Sidebar">Sidebar</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="blog_grid.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Grid">Grid</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="blog_sliders.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Sliders">Sliders</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="blog_filter.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Filter">Filter</span>
-								</a>
-							</li>
-						</ul><!-- dropdown end -->
-					</li><!-- nav-btn-box end -->
-
-					<!-- nav-btn-box start -->
-					<li class="nav-btn-box">
-						<a href="contact.html" class="nav-btn large dropdown-hidden-btn js-animsition-link js-pointer-large">
-							<span class="nav-btn__inner" data-text="Contact">Contact</span>
-						</a>
-					</li><!-- nav-btn-box end -->
-				</ul><!-- menu-box end -->
-
-				<!-- nav-information start -->
-				<div class="nav-information">
-					<!-- nav-email start -->
-					<div>
-						<div class="hidden-box d-inline-block">
-							<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Email</div>
-						</div>
-						<div class="nav-fade-anim js-nav-anim margin-top-10">
-							<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">email@umaya_agency.com</a><br>
-							<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">email@umaya_job.com</a>
-						</div>
-					</div><!-- nav-email end -->
-
-					<!-- nav-address start -->
-					<div>
-						<div class="hidden-box d-inline-block">
-							<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Address</div>
-						</div>
-						<div class="nav-fade-anim js-nav-anim margin-top-10">
-							<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">
-								PO Box 223158 Oliver Street<br>
-								East Victoria 2006 UK
-							</a>
-						</div>
-					</div><!-- nav-address end -->
-
-					<!-- nav-phone start -->
-					<div>
-						<div class="hidden-box d-inline-block">
-							<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Phone</div>
-						</div>
-						<div class="nav-fade-anim js-nav-anim margin-top-10">
-							<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">+23 8 8532 7834</a><br>
-							<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">+23 8 9635 7335</a>
-						</div>
-					</div><!-- nav-phone end -->
-				</div><!-- nav-information end -->
-
-				<!-- nav-copyright start -->
-				<div class="nav-copyright text-right">
-					<p class="copyright-style nav-fade-anim js-nav-anim">
-						&copy; Copyright 2020 UMAYA. Template by <a href="#" class="text-weight-700 js-pointer-small">Jinna Gik</a>
-					</p>
-				</div><!-- nav-copyright end -->
-			</div><!-- pos-rel end -->
-		</nav><!-- navigation end -->
 
 		<!-- main start -->
 		<main class="js-animsition-overlay" data-animsition-overlay="true">
@@ -477,20 +131,17 @@
 							<div class="container small padding-top-bottom-120">
 								<h2 class="headline-xl">
 									<span class="hidden-box d-block">
-										<span class="anim-slide tr-delay-02">We Generate</span>
+										<span class="anim-slide tr-delay-02">Hi I'm Daniel</span>
 									</span>
 									<span class="hidden-box d-block">
-										<span class="anim-slide tr-delay-03">Creative &</span>
+										<span class="anim-slide tr-delay-03 text-color-red">a UI/UX Designer</span>
 									</span>
 									<span class="hidden-box d-block">
-										<span class="anim-slide tr-delay-04">Novation Ideas</span>
+										<span class="anim-slide tr-delay-04">Based in Kenya</span>
 									</span>
 								</h2>
 								<div class="margin-top-30 anim-fade tr-delay-08">
 									<a href="#" class="border-btn js-pointer-large">
-										<span class="border-btn__inner">Read more</span>
-										<span class="border-btn__lines-1"></span>
-										<span class="border-btn__lines-2"></span>
 									</a>
 								</div>
 							</div>
@@ -509,23 +160,18 @@
 							<div class="container small text-center padding-top-bottom-120">
 								<h2 class="headline-xl">
 									<span class="hidden-box d-block">
-										<span class="anim-slide tr-delay-02">We’r Provided</span>
+										<span class="anim-slide tr-delay-02">I Create</span>
 									</span>
 									<span class="hidden-box d-block">
 										<span class="anim-slide tr-delay-03">
-											<span class="text-color-red">Best</span> Digital
+											<span class="text-color-red">Experiences, </span> 
 										</span>
 									</span>
 									<span class="hidden-box d-block">
-										<span class="anim-slide tr-delay-04 text-color-red">Services</span>
+										<span class="anim-slide tr-delay-04">Simplifying Solutions</span>
 									</span>
 								</h2>
 								<div class="margin-top-30 anim-fade tr-delay-08">
-									<a href="#" class="border-btn js-pointer-large">
-										<span class="border-btn__inner">Read more</span>
-										<span class="border-btn__lines-1"></span>
-										<span class="border-btn__lines-2"></span>
-									</a>
 								</div>
 							</div>
 						</div><!-- content end -->
@@ -553,11 +199,6 @@
 									</span>
 								</h2>
 								<div class="margin-top-30 anim-fade tr-delay-08">
-									<a href="#" class="border-btn js-pointer-large">
-										<span class="border-btn__inner">Read more</span>
-										<span class="border-btn__lines-1"></span>
-										<span class="border-btn__lines-2"></span>
-									</a>
 								</div>
 							</div>
 						</div><!-- content end -->
@@ -597,11 +238,8 @@
 							<h2 class="column-l-r-margin-10 headline-m js-scrollanim">
 								<span class="hidden-box d-block">
 									<span class="anim-slide">
-										We Are <span class="text-color-red">Creative</span>
+										About <span class="text-color-red">me</span>
 									</span>
-								</span>
-								<span class="hidden-box d-block">
-									<span class="anim-slide tr-delay-01 text-color-red">People</span>
 								</span>
 							</h2><!-- title end -->
 						</div><!-- column end -->
@@ -609,30 +247,40 @@
 						<!-- column start -->
 						<div class="six-columns padding-bottom-20">
 							<div class="column-l-r-margin-10">
-								<p class="body-text-s anim-text-reveal js-scrollanim">Pitchfork vaporware hella, vice next level art party subway tile swag portland. Cliche authentic photo booth, seitan sartorial iPhone brooklyn bicycle rights whatever small batch selvage affogato yuccie adaptogen vinyl. Sartorial franzen tacos cardigan, offal gluten-free pour-over snackwave plaid four dollar toast. Messenger bag keffiyeh church-key, synth iPhone pabst leggings ethical. PBR&B cred hot chicken pork belly.</p>
+								<p class="body-text-s anim-text-reveal js-scrollanim">Daniel is an Indispensable UI/UX designer from Kenya. He specializes in optimizing business value and synthesizing user needs with business requirements to create clean, user-friendly design solutions. He is skilled in developing customer-oriented solutions that drive business growth while being able to accurately communicate research findings to both technical and non-technical stakeholders. His expertise includes; </p>
 
 								<!-- list start -->
 								<ul class="list text-color-dadada margin-top-30 js-scrollanim">
 									<li class="list__item red dot hidden-box">
-										<div class="subhead-xxs anim-slide">Graphic Design</div>
+										<div class="subhead-xxs anim-slide">User interviews</div>
 									</li>
 									<li class="list__item red dot hidden-box">
-										<div class="subhead-xxs anim-slide tr-delay-01">User Interface Design</div>
+										<div class="subhead-xxs anim-slide tr-delay-01">User research
+										</div>
 									</li>
 									<li class="list__item red dot hidden-box">
-										<div class="subhead-xxs anim-slide tr-delay-02">User Experience Design</div>
+										<div class="subhead-xxs anim-slide tr-delay-02">Data analysis
+										</div>
 									</li>
 									<li class="list__item red dot hidden-box">
-										<div class="subhead-xxs anim-slide tr-delay-03">Web Design</div>
+										<div class="subhead-xxs anim-slide tr-delay-03">Competitive research and A/B testing  
+										</div>
 									</li>
 									<li class="list__item red dot hidden-box">
-										<div class="subhead-xxs anim-slide tr-delay-04">Motion Design</div>
+										<div class="subhead-xxs anim-slide tr-delay-04">Wireframing</div>
 									</li>
 									<li class="list__item red dot hidden-box">
-										<div class="subhead-xxs anim-slide tr-delay-05">Front-end Development</div>
+										<div class="subhead-xxs anim-slide tr-delay-05">Mockup creation
+										</div>
 									</li>
 									<li class="list__item red dot hidden-box">
-										<div class="subhead-xxs anim-slide tr-delay-06">Back-end Development</div>
+										<div class="subhead-xxs anim-slide tr-delay-06">Prototyping
+										</div>
+									</li>
+									<li class="list__item red dot hidden-box">
+										<div class="subhead-xxs anim-slide tr-delay-06">Usability testing
+
+										</div>
 									</li>
 								</ul><!-- list end -->
 							</div>
@@ -711,15 +359,11 @@
 						<button class="list__item js-filter-button anim-fade js-pointer-small js-filter-button-active" data-filter="*">
 							<span class="flip-btn text-color-black" data-text="Everything">Everything</span>
 						</button>
-						<button class="list__item js-filter-button anim-fade tr-delay-01 js-pointer-small" data-filter=".marketing">
-							<span class="flip-btn text-color-black" data-text="Marketing">Marketing</span>
+						{% for typ_ in project_types %}
+						<button class="list__item js-filter-button anim-fade tr-delay-01 js-pointer-small" data-filter=".{{typ_.joined_name}}">
+							<span class="flip-btn text-color-black" data-text="{{typ_.name}}">{{typ_.name}}</span>
 						</button>
-						<button class="list__item js-filter-button anim-fade tr-delay-02 js-pointer-small" data-filter=".photoshoot">
-							<span class="flip-btn text-color-black" data-text="Photoshoot">Photoshoot</span>
-						</button>
-						<button class="list__item js-filter-button anim-fade tr-delay-03 js-pointer-small" data-filter=".branding">
-							<span class="flip-btn text-color-black" data-text="Branding">Branding</span>
-						</button>
+						{% endfor %}
 					</div><!-- filter-buttons end -->
 
 					<!-- js-isotope-filter-grid-box start -->
@@ -728,410 +372,28 @@
 						<div class="js-isotope-filter-grid-item empty-grid-1px-33-50-none"></div>
 						<div class="js-isotope-filter-grid-item empty-grid-200px-33-none"></div>
 						<div class="js-isotope-filter-grid-item empty-grid-100px-33-50-none"></div>
-
+						{% for project in projects %}
 						<!-- grid-item start -->
-						<div class="padding-top-60 grid-item-33-50-100 js-isotope-filter-grid-item branding">
-							<a href="{% url 'project-view' id=1 %}" class="grid-margin-box hover-box js-animsition-link js-pointer-large">
+						<div class="padding-top-60 grid-item-33-50-100 js-isotope-filter-grid-item {{project.proj_type}}">
+							<a href="{% url 'project-view' id=project.id %}" class="grid-margin-box hover-box js-animsition-link js-pointer-large">
 								<div class="anim-img-scale anim-img-scale_hover js-img-scale">
-									<img class="anim-img-scale__inner" src="{% static 'images/projects/beauty-lab/beauty-beauty-product-cosmetics-makeup-2845213.jpg' %}" alt="project">
+									<img class="anim-img-scale__inner" src="{{project.image}}" alt="project">
 								</div>
 								<div class="margin-top-10 js-scrollanim">
 									<span class="hidden-box d-block">
-										<span class="subhead-xxs text-color-red anim-slide">Branding</span>
+										<span class="subhead-xxs text-color-red anim-slide">{{project.title}}</span>
 									</span>
 									<h3 class="hidden-box">
-										<span class="headline-xxxs text-color-black anim-slide tr-delay-02">Beauty lab</span>
+										<span class="headline-xxxs text-color-black anim-slide tr-delay-02">{{project.proj_type}}</span>
 									</h3>
 								</div>
 							</a>
 						</div><!-- grid-item end -->
+						{% endfor %}
 
-						<!-- grid-item start -->
-						<div class="padding-top-60 grid-item-33-50-100 js-isotope-filter-grid-item marketing">
-							<a href="{% url 'project-view' id=1 %}" class="grid-margin-box hover-box js-animsition-link js-pointer-large">
-								<div class="anim-img-scale anim-img-scale_hover js-img-scale">
-									<img class="anim-img-scale__inner" src="{% static 'images/projects/sneakers/person-holding-a-shoes-3194608.jpg' %}" alt="project">
-								</div>
-								<div class="margin-top-10 js-scrollanim">
-									<span class="hidden-box d-block">
-										<span class="subhead-xxs text-color-red anim-slide">Marketing</span>
-									</span>
-									<h3 class="hidden-box">
-										<span class="headline-xxxs text-color-black anim-slide tr-delay-02">Sneakers</span>
-									</h3>
-								</div>
-							</a>
-						</div><!-- grid-item end -->
-
-						<!-- grid-item start -->
-						<div class="padding-top-60 grid-item-33-50-100 js-isotope-filter-grid-item marketing">
-							<a href="{% url 'project-view' id=1 %}" class="grid-margin-box hover-box js-animsition-link js-pointer-large">
-								<div class="anim-img-scale anim-img-scale_hover js-img-scale">
-									<img class="anim-img-scale__inner" src="{% static 'images/projects/knit-cap/man-wears-orange-knit-cap-and-shirt-2802601.jpg' %}" alt="project">
-								</div>
-								<div class="margin-top-10 js-scrollanim">
-									<span class="hidden-box d-block">
-										<span class="subhead-xxs text-color-red anim-slide">Marketing</span>
-									</span>
-									<h3 class="hidden-box">
-										<span class="headline-xxxs text-color-black anim-slide tr-delay-02">Knit cap</span>
-									</h3>
-								</div>
-							</a>
-						</div><!-- grid-item end -->
-
-						<!-- grid-item start -->
-						<div class="padding-top-60 grid-item-33-50-100 js-isotope-filter-grid-item photoshoot">
-							<a href="{% url 'project-view' id=1 %}" class="grid-margin-box hover-box js-animsition-link js-pointer-large">
-								<div class="anim-img-scale anim-img-scale_hover js-img-scale">
-									<img class="anim-img-scale__inner" src="{% static 'images/projects/pexels/woman-in-black-sexy-top-2825034.jpg' %}" alt="project">
-								</div>
-								<div class="margin-top-10 js-scrollanim">
-									<span class="hidden-box d-block">
-										<span class="subhead-xxs text-color-red anim-slide">Photoshoot</span>
-									</span>
-									<h3 class="hidden-box">
-										<span class="headline-xxxs text-color-black anim-slide tr-delay-02">Pexels</span>
-									</h3>
-								</div>
-							</a>
-						</div><!-- grid-item end -->
-
-						<!-- grid-item start -->
-						<div class="padding-top-60 grid-item-33-50-100 js-isotope-filter-grid-item marketing">
-							<a href="{% url 'project-view' id=1 %}" class="grid-margin-box hover-box js-animsition-link js-pointer-large">
-								<div class="anim-img-scale anim-img-scale_hover js-img-scale">
-									<img class="anim-img-scale__inner" src="{% static 'images/projects/drone/quadcopter-on-wooden-surface-1601217.jpg' %}" alt="project">
-								</div>
-								<div class="margin-top-10 js-scrollanim">
-									<span class="hidden-box d-block">
-										<span class="subhead-xxs text-color-red anim-slide">Marketing</span>
-									</span>
-									<h3 class="hidden-box">
-										<span class="headline-xxxs text-color-black anim-slide tr-delay-02">Drone</span>
-									</h3>
-								</div>
-							</a>
-						</div><!-- grid-item end -->
-
-						<!-- grid-item start -->
-						<div class="padding-top-60 grid-item-33-50-100 js-isotope-filter-grid-item marketing">
-							<a href="{% url 'project-view' id=1 %}" class="grid-margin-box hover-box js-animsition-link js-pointer-large">
-								<div class="anim-img-scale anim-img-scale_hover js-img-scale">
-									<img class="anim-img-scale__inner" src="{% static 'images/projects/blue-ridge/flat-lay-photography-of-several-product-bottles-on-withered-1667071.jpg' %}" alt="project">
-								</div>
-								<div class="margin-top-10 js-scrollanim">
-									<span class="hidden-box d-block">
-										<span class="subhead-xxs text-color-red anim-slide">Marketing</span>
-									</span>
-									<h3 class="hidden-box">
-										<span class="headline-xxxs text-color-black anim-slide tr-delay-02">Blue ridge</span>
-									</h3>
-								</div>
-							</a>
-						</div><!-- grid-item end -->
-
-						<!-- grid-item start -->
-						<div class="padding-top-60 grid-item-33-50-100 js-isotope-filter-grid-item photoshoot">
-							<a href="{% url 'project-view' id=1 %}" class="grid-margin-box hover-box js-animsition-link js-pointer-large">
-								<div class="anim-img-scale anim-img-scale_hover js-img-scale">
-									<img class="anim-img-scale__inner" src="{% static 'images/projects/hoop-earrings/woman-with-gold-colored-hoop-earrings-2420555.jpg' %}" alt="project">
-								</div>
-								<div class="margin-top-10 js-scrollanim">
-									<span class="hidden-box d-block">
-										<span class="subhead-xxs text-color-red anim-slide">Photoshoot</span>
-									</span>
-									<h3 class="hidden-box">
-										<span class="headline-xxxs text-color-black anim-slide tr-delay-02">Hoop earrings</span>
-									</h3>
-								</div>
-							</a>
-						</div><!-- grid-item end -->
-
-						<!-- grid-item start -->
-						<div class="padding-top-60 grid-item-33-50-100 js-isotope-filter-grid-item photoshoot">
-							<a href="{% url 'project-view' id=1 %}" class="grid-margin-box hover-box js-animsition-link js-pointer-large">
-								<div class="anim-img-scale anim-img-scale_hover js-img-scale">
-									<img class="anim-img-scale__inner" src="{% static 'images/projects/black-eyes/woman-in-black-tube-top-beside-woman-in-white-off-shoulder-3823424-2.jpg' %}" alt="project">
-								</div>
-								<div class="margin-top-10 js-scrollanim">
-									<span class="hidden-box d-block">
-										<span class="subhead-xxs text-color-red anim-slide">Photoshoot</span>
-									</span>
-									<h3 class="hidden-box">
-										<span class="headline-xxxs text-color-black anim-slide tr-delay-02">Black eyes</span>
-									</h3>
-								</div>
-							</a>
-						</div><!-- grid-item end -->
-
-						<!-- grid-item start -->
-						<div class="padding-top-60 grid-item-33-50-100 js-isotope-filter-grid-item branding">
-							<a href="{% url 'project-view' id=1 %}" class="grid-margin-box hover-box js-animsition-link js-pointer-large">
-								<div class="anim-img-scale anim-img-scale_hover js-img-scale">
-									<img class="anim-img-scale__inner" src="{% static 'images/projects/the-ordinary/the-ordinary-product-line-3685530.jpg' %}" alt="project">
-								</div>
-								<div class="margin-top-10 js-scrollanim">
-									<span class="hidden-box d-block">
-										<span class="subhead-xxs text-color-red anim-slide">Branding</span>
-									</span>
-									<h3 class="hidden-box">
-										<span class="headline-xxxs text-color-black anim-slide tr-delay-02">The ordinary</span>
-									</h3>
-								</div>
-							</a>
-						</div><!-- grid-item end -->
 					</div><!-- js-isotope-filter-grid-box end -->
 				</div><!-- pos-rel end -->
 			</section><!-- portfolio end -->
-
-			<!-- team start -->
-			<section class="pos-rel section-bg-dark-2">
-				<!-- pos-rel start -->
-				<div class="pos-rel padding-top-bottom-120">
-					<!-- title start -->
-					<h2 class="headline-xxl text-center js-scrollanim hidden-box">
-						<span class="anim-slide">
-							Our <span class="text-color-red">Creative</span> Team
-						</span>
-					</h2><!-- title end -->
-
-					<!-- js-3-view-slider start -->
-					<div class="js-3-view-slider padding-top-bottom-90 hidden-box pos-rel">
-						<!-- swiper-wrapper start -->
-						<div class="swiper-wrapper js-slider-scroll-anim">
-							<!-- swiper-slide start -->
-							<div class="swiper-slide">
-								<!-- anim-img-scale start -->
-								<div class="anim-img-scale hover-box">
-									<img class="anim-img-scale__inner" src="{% static 'images/team/team_slider/red-air-jordan-baseball-cap-3452649.jpg' %}" alt="Jason Hardeman">
-
-									<!-- social btns start -->
-									<ul class="list pos-abs pos-left-top">
-										<li class="list__item hidden-box">
-											<div class="hover-slide">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Facebook">Facebook</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-01">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Dribbble">Dribbble</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-02">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Instagram">Instagram</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-03">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Behance">Behance</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-04">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Twitter">Twitter</a>
-											</div>
-										</li>
-									</ul><!-- social btns end -->
-								</div><!-- anim-img-scale end -->
-
-								<!-- content start -->
-								<div class="margin-top-20 margin-left-20">
-									<h4 class="subhead-m anim-text-double-fill tr-delay-01" data-text="Jason Hardeman">Jason Hardeman</h4><br>
-									<p class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-03" data-text="Creative director">Creative director</p>
-								</div><!-- content end -->
-							</div><!-- swiper-slide end -->
-
-							<!-- swiper-slide start -->
-							<div class="swiper-slide">
-								<!-- anim-img-scale start -->
-								<div class="anim-img-scale hover-box">
-									<img class="anim-img-scale__inner" src="{% static 'images/team/team_slider/woman-wearing-eyeglasses-on-brown-wooden-plank-1845210.jpg' %}" alt="Amanda Bryan">
-
-									<!-- social btns start -->
-									<ul class="list pos-abs pos-left-top">
-										<li class="list__item hidden-box">
-											<div class="hover-slide">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Facebook">Facebook</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-01">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Dribbble">Dribbble</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-02">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Instagram">Instagram</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-03">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Behance">Behance</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-04">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Twitter">Twitter</a>
-											</div>
-										</li>
-									</ul><!-- social btns end -->
-								</div><!-- anim-img-scale end -->
-
-								<!-- content start -->
-								<div class="margin-top-20 margin-left-20">
-									<h4 class="subhead-m anim-text-double-fill tr-delay-01" data-text="Amanda Bryan">Amanda Bryan</h4><br>
-									<p class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-03" data-text="Ui/UX designer">Ui/UX designer</p>
-								</div><!-- content end -->
-							</div><!-- swiper-slide end -->
-
-							<!-- swiper-slide start -->
-							<div class="swiper-slide">
-								<!-- anim-img-scale start -->
-								<div class="anim-img-scale hover-box">
-									<img class="anim-img-scale__inner" src="{% static 'images/team/team_slider/woman-posing-for-photo-shoot-1689731.jpg' %}" alt="Sharon Arney">
-
-									<!-- social btns start -->
-									<ul class="list pos-abs pos-left-top">
-										<li class="list__item hidden-box">
-											<div class="hover-slide">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Facebook">Facebook</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-01">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Dribbble">Dribbble</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-02">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Instagram">Instagram</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-03">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Behance">Behance</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-04">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Twitter">Twitter</a>
-											</div>
-										</li>
-									</ul><!-- social btns end -->
-								</div><!-- anim-img-scale end -->
-
-								<!-- content start -->
-								<div class="margin-top-20 margin-left-20">
-									<h4 class="subhead-m anim-text-double-fill tr-delay-01" data-text="Sharon Arney">Sharon Arney</h4><br>
-									<p class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-03" data-text="Project manager">Project manager</p>
-								</div><!-- content end -->
-							</div><!-- swiper-slide end -->
-
-							<!-- swiper-slide start -->
-							<div class="swiper-slide">
-								<!-- anim-img-scale start -->
-								<div class="anim-img-scale hover-box">
-									<img class="anim-img-scale__inner" src="{% static 'images/team/team_slider/woman-wearing-black-tank-top-sitting-on-gray-stainless-steel-1850178.jpg' %}" alt="Alyse Quintero">
-
-									<!-- social btns start -->
-									<ul class="list pos-abs pos-left-top">
-										<li class="list__item hidden-box">
-											<div class="hover-slide">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Facebook">Facebook</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-01">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Dribbble">Dribbble</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-02">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Instagram">Instagram</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-03">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Behance">Behance</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-04">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Twitter">Twitter</a>
-											</div>
-										</li>
-									</ul><!-- social btns end -->
-								</div><!-- anim-img-scale end -->
-
-								<!-- content start -->
-								<div class="margin-top-20 margin-left-20">
-									<h4 class="subhead-m anim-text-double-fill tr-delay-01" data-text="Alyse Quintero">Alyse Quintero</h4><br>
-									<p class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-03" data-text="Front-end developer">Front-end developer</p>
-								</div><!-- content end -->
-							</div><!-- swiper-slide end -->
-
-							<!-- swiper-slide start -->
-							<div class="swiper-slide">
-								<!-- anim-img-scale start -->
-								<div class="anim-img-scale hover-box">
-									<img class="anim-img-scale__inner" src="{% static 'images/team/team_slider/photo-of-woman-leaning-on-wall-2936815.jpg' %}" alt="Ashley Keller">
-
-									<!-- social btns start -->
-									<ul class="list pos-abs pos-left-top">
-										<li class="list__item hidden-box">
-											<div class="hover-slide">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Facebook">Facebook</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-01">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Dribbble">Dribbble</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-02">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Instagram">Instagram</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-03">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Behance">Behance</a>
-											</div>
-										</li>
-										<li class="list__item hidden-box">
-											<div class="hover-slide tr-delay-04">
-												<a href="#" class="flip-btn js-pointer-small" data-text="Twitter">Twitter</a>
-											</div>
-										</li>
-									</ul><!-- social btns end -->
-								</div><!-- anim-img-scale end -->
-
-								<!-- content start -->
-								<div class="margin-top-20 margin-left-20">
-									<h4 class="subhead-m anim-text-double-fill tr-delay-01" data-text="Ashley Keller">Ashley Keller</h4><br>
-									<p class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-03" data-text="Back-end developer">Back-end developer</p>
-								</div><!-- content end -->
-							</div><!-- swiper-slide end -->
-						</div><!-- swiper-wrapper end -->
-
-						<!-- swiper-button-prev start -->
-						<div class="swiper-button-prev-box">
-							<div class="swiper-button-prev"></div>
-						</div><!-- swiper-button-prev end -->
-						<!-- swiper-button-next start -->
-						<div class="swiper-button-next-box">
-							<div class="swiper-button-next"></div>
-						</div><!-- swiper-button-next end -->
-
-						<!-- swiper-pagination start -->
-						<div class="pagination-box">
-							<div class="swiper-pagination counter-pagination"></div>
-						</div><!-- swiper-pagination end -->
-					</div><!-- js-3-view-slider end -->
-				</div><!-- pos-rel end -->
-			</section><!-- team end -->
 
 			<!-- clients start -->
 			<section class="pos-rel section-bg-dark-1">
@@ -1143,11 +405,11 @@
 						<h2 class="headline-l js-scrollanim">
 							<span class="hidden-box d-block">
 								<span class="anim-slide">
-									<span class="text-color-red">Fine Folks</span>
+									<span class="text-color-red">Companies</span>
 								</span>
 							</span>
 							<span class="hidden-box d-block">
-								<span class="anim-slide tr-delay-01">We’ve Worked</span>
+								<span class="anim-slide tr-delay-01">I’ve Worked</span>
 							</span>
 							<span class="hidden-box d-block">
 								<span class="anim-slide tr-delay-02">With</span>
@@ -1157,92 +419,15 @@
 						<!-- clients-lines start -->
 						<div class="clients-lines padding-top-90">
 							<!-- clients-lines__column start -->
+							{% for client in clients %}
 							<div class="clients-lines__column">
 								<div class="clients-lines__inner hover-box pos-rel">
-									<img class="client-logo client-hover-out pos-abs pos-center-center" src="{% static 'images/clients/balancha.png' %}" alt="clients logo">
-									<img class="client-logo client-hover-in pos-abs pos-center-center" src="{% static 'images/clients/balancha-red.png' %}" alt="clients logo">
+									<img class="client-logo client-hover-out pos-abs pos-center-center" src="{{client.image}}" alt="clients logo">
+									<img class="client-logo client-hover-in pos-abs pos-center-center" src="{{client.image}}" alt="clients logo">
 								</div>
 							</div><!-- clients-lines__column end -->
+							{% endfor %}
 
-							<!-- clients-lines__column start -->
-							<div class="clients-lines__column">
-								<div class="clients-lines__inner hover-box pos-rel">
-									<img class="client-logo client-hover-out pos-abs pos-center-center" src="{% static 'images/clients/jorgo.png' %}" alt="clients logo">
-									<img class="client-logo client-hover-in pos-abs pos-center-center" src="{% static 'images/clients/jorgo-red.png' %}" alt="clients logo">
-								</div>
-							</div><!-- clients-lines__column end -->
-
-							<!-- clients-lines__column start -->
-							<div class="clients-lines__column">
-								<div class="clients-lines__inner hover-box pos-rel">
-									<img class="client-logo client-hover-out pos-abs pos-center-center" src="{% static 'images/clients/judoboy.png' %}" alt="clients logo">
-									<img class="client-logo client-hover-in pos-abs pos-center-center" src="{% static 'images/clients/judoboy-red.png' %}" alt="clients logo">
-								</div>
-							</div><!-- clients-lines__column end -->
-
-							<!-- clients-lines__column start -->
-							<div class="clients-lines__column">
-								<div class="clients-lines__inner hover-box pos-rel">
-									<img class="client-logo client-hover-out pos-abs pos-center-center" src="{% static 'images/clients/kizil-jindi.png' %}" alt="clients logo">
-									<img class="client-logo client-hover-in pos-abs pos-center-center" src="{% static 'images/clients/kizil-jindi-red.png' %}" alt="clients logo">
-								</div>
-							</div><!-- clients-lines__column end -->
-
-							<!-- clients-lines__column start -->
-							<div class="clients-lines__column">
-								<div class="clients-lines__inner hover-box pos-rel">
-									<img class="client-logo client-hover-out pos-abs pos-center-center" src="{% static 'images/clients/meyman.png' %}" alt="clients logo">
-									<img class="client-logo client-hover-in pos-abs pos-center-center" src="{% static 'images/clients/meyman-red.png' %}" alt="clients logo">
-								</div>
-							</div><!-- clients-lines__column end -->
-
-							<!-- clients-lines__column start -->
-							<div class="clients-lines__column">
-								<div class="clients-lines__inner hover-box pos-rel">
-									<img class="client-logo client-hover-out pos-abs pos-center-center" src="{% static 'images/clients/olchobay.png' %}" alt="clients logo">
-									<img class="client-logo client-hover-in pos-abs pos-center-center" src="{% static 'images/clients/olchobay-red.png' %}" alt="clients logo">
-								</div>
-							</div><!-- clients-lines__column end -->
-
-							<!-- clients-lines__column start -->
-							<div class="clients-lines__column">
-								<div class="clients-lines__inner hover-box pos-rel">
-									<img class="client-logo client-hover-out pos-abs pos-center-center" src="{% static 'images/clients/tamaktan.png' %}" alt="clients logo">
-									<img class="client-logo client-hover-in pos-abs pos-center-center" src="{% static 'images/clients/tamaktan-red.png' %}" alt="clients logo">
-								</div>
-							</div><!-- clients-lines__column end -->
-
-							<!-- clients-lines__column start -->
-							<div class="clients-lines__column">
-								<div class="clients-lines__inner hover-box pos-rel">
-									<img class="client-logo client-hover-out pos-abs pos-center-center" src="{% static 'images/clients/chayhana.png' %}" alt="clients logo">
-									<img class="client-logo client-hover-in pos-abs pos-center-center" src="{% static 'images/clients/chayhana-red.png' %}" alt="clients logo">
-								</div>
-							</div><!-- clients-lines__column end -->
-
-							<!-- clients-lines__column start -->
-							<div class="clients-lines__column">
-								<div class="clients-lines__inner hover-box pos-rel">
-									<img class="client-logo client-hover-out pos-abs pos-center-center" src="{% static 'images/clients/dongolok.png' %}" alt="clients logo">
-									<img class="client-logo client-hover-in pos-abs pos-center-center" src="{% static 'images/clients/dongolok-red.png' %}" alt="clients logo">
-								</div>
-							</div><!-- clients-lines__column end -->
-
-							<!-- clients-lines__column start -->
-							<div class="clients-lines__column">
-								<div class="clients-lines__inner hover-box pos-rel">
-									<img class="client-logo client-hover-out pos-abs pos-center-center" src="{% static 'images/clients/eptep-septep.png' %}" alt="clients logo">
-									<img class="client-logo client-hover-in pos-abs pos-center-center" src="{% static 'images/clients/eptep-septep-red.png' %}" alt="clients logo">
-								</div>
-							</div><!-- clients-lines__column end -->
-
-							<!-- clients-lines__column start -->
-							<div class="clients-lines__column">
-								<div class="clients-lines__inner hover-box pos-rel">
-									<img class="client-logo client-hover-out pos-abs pos-center-center" src="{% static 'images/clients/guldoyjan.png' %}" alt="clients logo">
-									<img class="client-logo client-hover-in pos-abs pos-center-center" src="{% static 'images/clients/guldoyjan-red.png' %}" alt="clients logo">
-								</div>
-							</div><!-- clients-lines__column end -->
 
 							<!-- clients-lines__column start -->
 							<a href="#" class="clients-lines__column js-pointer-large">
@@ -1263,552 +448,6 @@
 				</div><!-- pos-rel end -->
 			</section><!-- clients end -->
 
-			<!-- testimonials start -->
-			<section class="pos-rel section-bg-light-1" data-midnight="black">
-				<!-- pos-rel start -->
-				<div class="pos-rel flex-min-height-100vh">
-					<!-- padding-top-bottom-120 start -->
-					<div class="padding-top-bottom-120 width-100perc">
-						<!-- title start -->
-						<h2 class="headline-xxl text-color-black text-center hidden-box">
-							<span class="anim-slide js-scrollanim">Testimonials</span>
-						</h2><!-- title end -->
-
-						<!-- js-2-view-slider start -->
-						<div class="js-2-view-slider padding-top-bottom-90 hidden-box pos-rel">
-							<!-- swiper-wrapper start -->
-							<div class="swiper-wrapper js-slider-scroll-anim">
-								<!-- swiper-slide start -->
-								<div class="swiper-slide slide-scale-anim">
-									<div class="margin-left-right-20 padding-left-right-20 padding-top-bottom-40 content-bg-light-2 border-radius-10px">
-										<p class="margin-bottom-30 quote quote_bottom body-text-m text-color-black text-center">Pok pok authentic fashion axe, vegan venmo leggings raclette tousled twee tattooed. Banh mi humblebrag hammock tacos fashion axe aesthetic vegan sustainable taiyaki thundercats jean shorts tousled cloud bread waistcoat kogi. Cloud bread cardigan messenger bag raw.</p>
-										<!-- anim-img-scale start -->
-										<div class="anim-img-scale testimonials-author border-radius-50perc">
-											<img class="anim-img-scale__inner" src="{% static 'images/testimonials/woman-wearing-white-and-black-shirt-1388888.jpg' %}" alt="author">
-										</div><!-- anim-img-scale end -->
-										<div class="margin-top-20 text-center">
-											<span class="headline-xxxs text-color-black">Lucille Hatcher</span><br>
-											<span class="subhead-xxs text-color-888888">Investor</span>
-										</div>
-									</div>
-								</div><!-- swiper-slide end -->
-
-								<!-- swiper-slide start -->
-								<div class="swiper-slide slide-scale-anim">
-									<div class="margin-left-right-20 padding-left-right-20 padding-top-bottom-40 content-bg-light-2 border-radius-10px">
-										<p class="margin-bottom-30 quote quote_bottom body-text-m text-color-black text-center">Pitchfork vaporware hella, vice next level art party subway tile swag portland. Cliche authentic photo booth, seitan sartorial iPhone brooklyn bicycle rights whatever small batch selvage affogato yuccie adaptogen vinyl. Sartorial franzen tacos cardigan, offal gluten-free pour-over.</p>
-										<!-- anim-img-scale start -->
-										<div class="anim-img-scale testimonials-author border-radius-50perc">
-											<img class="anim-img-scale__inner" src="{% static 'images/testimonials/man-standing-near-building-white-black-turtleneck-shirt-874158.jpg' %}" alt="author">
-										</div><!-- anim-img-scale end -->
-										<div class="margin-top-20 text-center">
-											<span class="headline-xxxs text-color-black">Edward Jordan</span><br>
-											<span class="subhead-xxs text-color-888888">Cytotechnologist</span>
-										</div>
-									</div>
-								</div><!-- swiper-slide end -->
-
-								<!-- swiper-slide start -->
-								<div class="swiper-slide slide-scale-anim">
-									<div class="margin-left-right-20 padding-left-right-20 padding-top-bottom-40 content-bg-light-2 border-radius-10px">
-										<p class="margin-bottom-30 quote quote_bottom body-text-m text-color-black text-center">Chambray enamel pin synth shabby chic palo santo. Franzen 90's man bun wayfarers, put a bird on it twee four loko roof party shabby chic kale chips photo booth salvia mixtape lumbersexual. Pug kickstarter hammock unicorn, cardigan ennui celiac roof party. Ramps pitchfork direct.</p>
-										<!-- anim-img-scale start -->
-										<div class="anim-img-scale testimonials-author border-radius-50perc">
-											<img class="anim-img-scale__inner" src="{% static 'images/testimonials/informal-young-woman-listening-to-music-near-grunge-wall-3771823.jpg' %}" alt="author">
-										</div><!-- anim-img-scale end -->
-										<div class="margin-top-20 text-center">
-											<span class="headline-xxxs text-color-black">Mary Ross</span><br>
-											<span class="subhead-xxs text-color-888888">Fashion designer</span>
-										</div>
-									</div>
-								</div><!-- swiper-slide end -->
-
-								<!-- swiper-slide start -->
-								<div class="swiper-slide slide-scale-anim">
-									<div class="margin-left-right-20 padding-left-right-20 padding-top-bottom-40 content-bg-light-2 border-radius-10px">
-										<p class="margin-bottom-30 quote quote_bottom body-text-m text-color-black text-center">Copper mug vexillologist +1 prism iPhone fashion axe portland. Hella quinoa woke blog af umami tacos freegan vinyl snackwave microdosing. Fanny pack direct trade XOXO drinking vinegar. Live-edge kinfolk master cleanse brooklyn meh organic man braid. Actually humblebrag sriracha.</p>
-										<!-- anim-img-scale start -->
-										<div class="anim-img-scale testimonials-author border-radius-50perc">
-											<img class="anim-img-scale__inner" src="{% static 'images/testimonials/photography-of-guy-wearing-yellow-hoodie-1183266.jpg' %}" alt="author">
-										</div><!-- anim-img-scale end -->
-										<div class="margin-top-20 text-center">
-											<span class="headline-xxxs text-color-black">Dwight Bell</span><br>
-											<span class="subhead-xxs text-color-888888">Banquet manager</span>
-										</div>
-									</div>
-								</div><!-- swiper-slide end -->
-
-								<!-- swiper-slide start -->
-								<div class="swiper-slide slide-scale-anim">
-									<div class="margin-left-right-20 padding-left-right-20 padding-top-bottom-40 content-bg-light-2 border-radius-10px">
-										<p class="margin-bottom-30 quote quote_bottom body-text-m text-color-black text-center">Bushwick tumeric slow-carb photo booth letterpress franzen kombucha tumblr listicle cronut waistcoat mustache. Jean shorts tilde swag cray. Microdosing heirloom wayfarers YOLO, church-key tattooed cred blue bottle viral lyft tacos retro. Bespoke drinking vinegar single-origin.</p>
-										<!-- anim-img-scale start -->
-										<div class="anim-img-scale testimonials-author border-radius-50perc">
-											<img class="anim-img-scale__inner" src="{% static 'images/testimonials/man-standing-on-stairs-1254502.jpg' %}" alt="author">
-										</div><!-- anim-img-scale end -->
-										<div class="margin-top-20 text-center">
-											<span class="headline-xxxs text-color-black">Brian Amos</span><br>
-											<span class="subhead-xxs text-color-888888">Health educator</span>
-										</div>
-									</div>
-								</div><!-- swiper-slide end -->
-							</div><!-- swiper-wrapper end -->
-
-							<!-- swiper-button-prev start -->
-							<div class="swiper-button-prev-box">
-								<div class="swiper-button-prev black"></div>
-							</div><!-- swiper-button-prev end -->
-							<!-- swiper-button-next start -->
-							<div class="swiper-button-next-box">
-								<div class="swiper-button-next black"></div>
-							</div><!-- swiper-button-next end -->
-
-							<!-- swiper-pagination start -->
-							<div class="pagination-box">
-								<div class="swiper-pagination counter-pagination black"></div>
-							</div><!-- swiper-pagination end -->
-						</div><!-- js-2-view-slider end -->
-					</div><!-- padding-top-bottom-120 end -->
-				</div><!-- pos-rel end -->
-			</section><!-- testimonials end -->
-
-			<!-- video content start -->
-			<div class="pos-rel bg-img-cover height-100vh" style="background-image:url(/static/images/projects/neon-lights/woman-wearing-beige-and-gray-hoodie-portrait-2272855.jpg)">
-				<div class="bg-overlay-black"></div>
-				<div class="pos-rel height-100perc">
-					<a href="https://www.youtube.com/watch?v=hitNXU4PoRU" class="play-button js-popup-youtube js-pointer-large">
-						<span class="play-button__inner"></span>
-					</a>
-				</div>
-			</div><!-- video content end -->
-
-			<!-- latest news start -->
-			<section class="pos-rel section-bg-light-2" data-midnight="black">
-				<!-- pos-rel start -->
-				<div class="pos-rel padding-top-bottom-120">
-					<!-- container start -->
-					<div class="container small">
-						<!-- title start -->
-						<h2 class="headline-xxl text-color-black text-center hidden-box">
-							<span class="anim-slide js-scrollanim">
-								From the <span class="text-color-red">Blog</span>
-							</span>
-						</h2><!-- title end -->
-
-						<!-- blog-entry start -->
-						<article class="flex-container flex-align-center padding-top-60">
-							<div class="six-columns padding-top-30">
-								<a href="post_dont-panic.html" class="d-block hover-box anim-img-reveal js-scrollanim js-pointer-large js-animsition-link">
-									<div class="anim-img-reveal__hidden">
-										<div class="anim-img-reveal__scale">
-											<img class="img-hover-scale" src="{% static 'images/posts/decor-and-furniture/two-vases-on-table-842950.jpg' %}" alt="Post">
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="six-columns padding-top-30">
-								<div class="column-l-margin-40 anim-fade js-scrollanim">
-									<ul class="list list_row list_margin-30px">
-										<li class="list__item">
-											<a href="#" class="subhead-xxs text-color-888888 text-hover-to-red js-pointer-small">By: Nancy Newton</a>
-										</li>
-										<li class="list__item">
-											<a href="#" class="subhead-xxs text-color-888888 text-hover-to-red js-pointer-small">In: Art</a>
-										</li>
-										<li class="list__item">
-											<a href="#" class="subhead-xxs text-color-888888 text-hover-to-red js-pointer-small">2020, March 2</a>
-										</li>
-									</ul>
-									<a href="post_dont-panic.html" class="margin-top-bottom-30 d-block js-pointer-large js-animsition-link">
-										<h3 class="headline-xxxs text-color-black">
-											Home decor and furniture<br>
-											stores near me
-										</h3>
-										<p class="body-text-xs margin-top-20 text-color-black">Plaid retro migas venmo lo-fi ethical artisan fingerstache seitan you probably haven't heard of them fam keffiyeh...</p>
-									</a>
-									<a href="post_dont-panic.html" class="skew-btn js-pointer-large js-animsition-link">
-										<span class="skew-btn__box">
-											<span class="skew-btn__content text-color-black">Continue reading</span>
-											<span class="skew-btn__arrow black"></span>
-										</span>
-									</a>
-								</div>
-							</div>
-						</article><!-- blog-entry end -->
-
-						<!-- blog-entry start -->
-						<article class="flex-container reverse flex-align-center padding-top-60">
-							<div class="six-columns padding-top-30">
-								<div class="column-r-margin-40 anim-fade js-scrollanim">
-									<ul class="list list_row list_margin-30px">
-										<li class="list__item">
-											<a href="#" class="subhead-xxs text-color-888888 text-hover-to-red js-pointer-small">By: Jeffery Reder</a>
-										</li>
-										<li class="list__item">
-											<a href="#" class="subhead-xxs text-color-888888 text-hover-to-red js-pointer-small">In: Culture</a>
-										</li>
-										<li class="list__item">
-											<a href="#" class="subhead-xxs text-color-888888 text-hover-to-red js-pointer-small">2020, March 15</a>
-										</li>
-									</ul>
-									<a href="post_good-morning.html" class="margin-top-bottom-30 d-block js-pointer-large js-animsition-link">
-										<h3 class="headline-xxxs text-color-black">
-											Good morning!<br>
-											Have a nice day
-										</h3>
-										<p class="body-text-xs margin-top-20 text-color-black">Plaid retro migas venmo lo-fi ethical artisan fingerstache seitan you probably haven't heard of them fam keffiyeh...</p>
-									</a>
-									<a href="post_good-morning.html" class="skew-btn js-pointer-large js-animsition-link">
-										<span class="skew-btn__box">
-											<span class="skew-btn__content text-color-black">Continue reading</span>
-											<span class="skew-btn__arrow black"></span>
-										</span>
-									</a>
-								</div>
-							</div>
-							<div class="six-columns padding-top-30">
-								<a href="post_good-morning.html" class="d-block hover-box anim-img-reveal js-scrollanim js-pointer-large js-animsition-link">
-									<div class="anim-img-reveal__hidden">
-										<div class="anim-img-reveal__scale">
-											<img class="img-hover-scale" src="{% static 'images/posts/good-morning/round-white-ceramic-saucer-and-coffee-cup-2638019.jpg' %}" alt="Post">
-										</div>
-									</div>
-								</a>
-							</div>
-						</article><!-- blog-entry end -->
-
-						<!-- blog-entry start -->
-						<article class="flex-container flex-align-center padding-top-60">
-							<div class="six-columns padding-top-30">
-								<a href="post_dont-panic.html" class="d-block hover-box anim-img-reveal js-scrollanim js-pointer-large js-animsition-link">
-									<div class="anim-img-reveal__hidden">
-										<div class="anim-img-reveal__scale">
-											<img class="img-hover-scale" src="{% static 'images/posts/home-studio/pexels-3388901.jpg' %}" alt="Post">
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="six-columns padding-top-30">
-								<div class="column-l-margin-40 anim-fade js-scrollanim">
-									<ul class="list list_row list_margin-30px">
-										<li class="list__item">
-											<a href="#" class="subhead-xxs text-color-888888 text-hover-to-red js-pointer-small">By: Nick Hufnagel</a>
-										</li>
-										<li class="list__item">
-											<a href="#" class="subhead-xxs text-color-888888 text-hover-to-red js-pointer-small">In: Design</a>
-										</li>
-										<li class="list__item">
-											<a href="#" class="subhead-xxs text-color-888888 text-hover-to-red js-pointer-small">2020, April 7</a>
-										</li>
-									</ul>
-									<a href="post_dont-panic.html" class="margin-top-bottom-30 d-block js-pointer-large js-animsition-link">
-										<h3 class="headline-xxxs text-color-black">
-											Home recording studio<br>
-											interior design
-										</h3>
-										<p class="body-text-xs margin-top-20 text-color-black">Plaid retro migas venmo lo-fi ethical artisan fingerstache seitan you probably haven't heard of them fam keffiyeh...</p>
-									</a>
-									<a href="post_dont-panic.html" class="skew-btn js-pointer-large js-animsition-link">
-										<span class="skew-btn__box">
-											<span class="skew-btn__content text-color-black">Continue reading</span>
-											<span class="skew-btn__arrow black"></span>
-										</span>
-									</a>
-								</div>
-							</div>
-						</article><!-- blog-entry end -->
-					</div><!-- container end -->
-				</div><!-- pos-rel end -->
-			</section><!-- latest news end -->
-
-			<!-- pricing start -->
-			<section class="pos-rel section-bg-dark-1">
-				<!-- pos-rel start -->
-				<div class="pos-rel padding-top-bottom-120">
-					<!-- title start -->
-					<h2 class="headline-xxl text-center hidden-box js-scrollanim">
-						<span class="anim-slide">
-							Our <span class="text-color-red">Pricing</span>
-						</span>
-					</h2><!-- title end -->
-
-					<!-- flex-container start -->
-					<div class="container small flex-container flex-justify-center padding-top-30">
-						<!-- column start -->
-						<div class="four-columns column-50-100 padding-top-60">
-							<div class="column-l-r-margin-10 price-top-offset content-bg-dark-2 border-radius-10px hidden-box">
-								<div class="text-center content-bg-red">
-									<h3 class="subhead-m padding-top-bottom-20">Basic</h3>
-								</div>
-								<h4 class="text-center padding-top-bottom-50">
-									<span class="headline-l">$100</span><br>
-									<span class="subhead-xs">Per month</span>
-								</h4>
-								<!-- accordion start -->
-								<div class="accordion js-accordion margin-left-right-20">
-									<!-- accordion__tab start -->
-									<div class="accordion__tab js-accordion-tab">
-										<div class="accordion__btn js-accordion-btn js-pointer-large">
-											<h6 class="accordion__btn-title headline-xxxxs">Marketing</h6>
-										</div>
-										<div class="accordion__content js-accordion-content">
-											<!-- list start -->
-											<ul class="list list_center text-color-dadada subhead-xxs">
-												<li class="list__item check red">Copper mug</li>
-												<li class="list__item check red">Vexillologist +1</li>
-												<li class="list__item check red">Prism iPhone</li>
-												<li class="list__item check red">Hella quinoa</li>
-												<li class="list__item check red">Blog af umami</li>
-												<li class="list__item x opacity-05">Vinyl snackwave</li>
-												<li class="list__item x opacity-05">XOXO drinking</li>
-											</ul><!-- list end -->
-										</div>
-									</div><!-- accordion__tab end -->
-									<!-- accordion__tab start -->
-									<div class="accordion__tab js-accordion-tab">
-										<div class="accordion__btn js-accordion-btn js-pointer-large">
-											<h6 class="accordion__btn-title headline-xxxxs">Branding</h6>
-										</div>
-										<div class="accordion__content js-accordion-content">
-											<!-- list start -->
-											<ul class="list list_center text-color-dadada subhead-xxs">
-												<li class="list__item check red">Copper mug</li>
-												<li class="list__item check red">Vexillologist +1</li>
-												<li class="list__item check red">Prism iPhone</li>
-												<li class="list__item check red">Hella quinoa</li>
-												<li class="list__item check red">Blog af umami</li>
-												<li class="list__item x opacity-05">Vinyl snackwave</li>
-												<li class="list__item x opacity-05">XOXO drinking</li>
-											</ul><!-- list end -->
-										</div>
-									</div><!-- accordion__tab end -->
-									<!-- accordion__tab start -->
-									<div class="accordion__tab js-accordion-tab">
-										<div class="accordion__btn js-accordion-btn js-pointer-large">
-											<h6 class="accordion__btn-title headline-xxxxs">Photoshoot</h6>
-										</div>
-										<div class="accordion__content js-accordion-content">
-											<!-- list start -->
-											<ul class="list list_center text-color-dadada subhead-xxs">
-												<li class="list__item check red">Copper mug</li>
-												<li class="list__item check red">Vexillologist +1</li>
-												<li class="list__item check red">Prism iPhone</li>
-												<li class="list__item check red">Hella quinoa</li>
-												<li class="list__item check red">Blog af umami</li>
-												<li class="list__item x opacity-05">Vinyl snackwave</li>
-												<li class="list__item x opacity-05">XOXO drinking</li>
-											</ul><!-- list end -->
-										</div>
-									</div><!-- accordion__tab end -->
-									<!-- accordion__tab start -->
-									<div class="accordion__tab js-accordion-tab">
-										<div class="accordion__btn js-accordion-btn js-pointer-large">
-											<h6 class="accordion__btn-title headline-xxxxs">Web development</h6>
-										</div>
-										<div class="accordion__content js-accordion-content">
-											<!-- list start -->
-											<ul class="list list_center text-color-dadada subhead-xxs">
-												<li class="list__item check red">Copper mug</li>
-												<li class="list__item check red">Vexillologist +1</li>
-												<li class="list__item check red">Prism iPhone</li>
-												<li class="list__item check red">Hella quinoa</li>
-												<li class="list__item check red">Blog af umami</li>
-												<li class="list__item x opacity-05">Vinyl snackwave</li>
-												<li class="list__item x opacity-05">XOXO drinking</li>
-											</ul><!-- list end -->
-										</div>
-									</div><!-- accordion__tab end -->
-								</div><!-- accordion end -->
-								<div class="padding-top-bottom-50 text-center">
-									<a href="#" class="ellipse-btn js-pointer-large">sign up</a>
-								</div>
-							</div>
-						</div><!-- column end -->
-
-						<!-- column start -->
-						<div class="four-columns column-50-100 padding-top-60">
-							<div class="column-l-r-margin-10 content-bg-dark-2 border-radius-10px hidden-box">
-								<div class="text-center content-bg-red">
-									<h3 class="subhead-m padding-top-bottom-40">Standard</h3>
-								</div>
-								<h4 class="text-center padding-top-bottom-50">
-									<span class="headline-l">$120</span><br>
-									<span class="subhead-xs">Per month</span>
-								</h4>
-								<!-- accordion start -->
-								<div class="accordion js-accordion margin-left-right-20">
-									<!-- accordion__tab start -->
-									<div class="accordion__tab js-accordion-tab">
-										<div class="accordion__btn js-accordion-btn js-pointer-large">
-											<h6 class="accordion__btn-title headline-xxxxs">Marketing</h6>
-										</div>
-										<div class="accordion__content js-accordion-content">
-											<!-- list start -->
-											<ul class="list list_center text-color-dadada subhead-xxs">
-												<li class="list__item check red">Copper mug</li>
-												<li class="list__item check red">Vexillologist +1</li>
-												<li class="list__item check red">Prism iPhone</li>
-												<li class="list__item check red">Hella quinoa</li>
-												<li class="list__item check red">Blog af umami</li>
-												<li class="list__item check red">Vinyl snackwave</li>
-												<li class="list__item x opacity-05">XOXO drinking</li>
-											</ul><!-- list end -->
-										</div>
-									</div><!-- accordion__tab end -->
-									<!-- accordion__tab start -->
-									<div class="accordion__tab js-accordion-tab">
-										<div class="accordion__btn js-accordion-btn js-pointer-large">
-											<h6 class="accordion__btn-title headline-xxxxs">Branding</h6>
-										</div>
-										<div class="accordion__content js-accordion-content">
-											<!-- list start -->
-											<ul class="list list_center text-color-dadada subhead-xxs">
-												<li class="list__item check red">Copper mug</li>
-												<li class="list__item check red">Vexillologist +1</li>
-												<li class="list__item check red">Prism iPhone</li>
-												<li class="list__item check red">Hella quinoa</li>
-												<li class="list__item check red">Blog af umami</li>
-												<li class="list__item check red">Vinyl snackwave</li>
-												<li class="list__item x opacity-05">XOXO drinking</li>
-											</ul><!-- list end -->
-										</div>
-									</div><!-- accordion__tab end -->
-									<!-- accordion__tab start -->
-									<div class="accordion__tab js-accordion-tab">
-										<div class="accordion__btn js-accordion-btn js-pointer-large">
-											<h6 class="accordion__btn-title headline-xxxxs">Photoshoot</h6>
-										</div>
-										<div class="accordion__content js-accordion-content">
-											<!-- list start -->
-											<ul class="list list_center text-color-dadada subhead-xxs">
-												<li class="list__item check red">Copper mug</li>
-												<li class="list__item check red">Vexillologist +1</li>
-												<li class="list__item check red">Prism iPhone</li>
-												<li class="list__item check red">Hella quinoa</li>
-												<li class="list__item check red">Blog af umami</li>
-												<li class="list__item check red">Vinyl snackwave</li>
-												<li class="list__item x opacity-05">XOXO drinking</li>
-											</ul><!-- list end -->
-										</div>
-									</div><!-- accordion__tab end -->
-									<!-- accordion__tab start -->
-									<div class="accordion__tab js-accordion-tab">
-										<div class="accordion__btn js-accordion-btn js-pointer-large">
-											<h6 class="accordion__btn-title headline-xxxxs">Web development</h6>
-										</div>
-										<div class="accordion__content js-accordion-content">
-											<!-- list start -->
-											<ul class="list list_center text-color-dadada subhead-xxs">
-												<li class="list__item check red">Copper mug</li>
-												<li class="list__item check red">Vexillologist +1</li>
-												<li class="list__item check red">Prism iPhone</li>
-												<li class="list__item check red">Hella quinoa</li>
-												<li class="list__item check red">Blog af umami</li>
-												<li class="list__item check red">Vinyl snackwave</li>
-												<li class="list__item x opacity-05">XOXO drinking</li>
-											</ul><!-- list end -->
-										</div>
-									</div><!-- accordion__tab end -->
-								</div><!-- accordion end -->
-								<div class="padding-top-bottom-50 text-center">
-									<a href="#" class="ellipse-btn ellipse-btn_red js-pointer-large">sign up</a>
-								</div>
-							</div>
-						</div><!-- column end -->
-
-						<!-- column start -->
-						<div class="four-columns column-50-100 padding-top-60">
-							<div class="column-l-r-margin-10 price-top-offset content-bg-dark-2 border-radius-10px hidden-box">
-								<div class="text-center content-bg-red">
-									<h3 class="subhead-m padding-top-bottom-20">Extended</h3>
-								</div>
-								<h4 class="text-center padding-top-bottom-50">
-									<span class="headline-l">$150</span><br>
-									<span class="subhead-xs">Per month</span>
-								</h4>
-								<!-- accordion start -->
-								<div class="accordion js-accordion margin-left-right-20">
-									<!-- accordion__tab start -->
-									<div class="accordion__tab js-accordion-tab">
-										<div class="accordion__btn js-accordion-btn js-pointer-large">
-											<h6 class="accordion__btn-title headline-xxxxs">Marketing</h6>
-										</div>
-										<div class="accordion__content js-accordion-content">
-											<!-- list start -->
-											<ul class="list list_center text-color-dadada subhead-xxs">
-												<li class="list__item check red">Copper mug</li>
-												<li class="list__item check red">Vexillologist +1</li>
-												<li class="list__item check red">Prism iPhone</li>
-												<li class="list__item check red">Hella quinoa</li>
-												<li class="list__item check red">Blog af umami</li>
-												<li class="list__item check red">Vinyl snackwave</li>
-												<li class="list__item check red">XOXO drinking</li>
-											</ul><!-- list end -->
-										</div>
-									</div><!-- accordion__tab end -->
-									<!-- accordion__tab start -->
-									<div class="accordion__tab js-accordion-tab">
-										<div class="accordion__btn js-accordion-btn js-pointer-large">
-											<h6 class="accordion__btn-title headline-xxxxs">Branding</h6>
-										</div>
-										<div class="accordion__content js-accordion-content">
-											<!-- list start -->
-											<ul class="list list_center text-color-dadada subhead-xxs">
-												<li class="list__item check red">Copper mug</li>
-												<li class="list__item check red">Vexillologist +1</li>
-												<li class="list__item check red">Prism iPhone</li>
-												<li class="list__item check red">Hella quinoa</li>
-												<li class="list__item check red">Blog af umami</li>
-												<li class="list__item check red">Vinyl snackwave</li>
-												<li class="list__item check red">XOXO drinking</li>
-											</ul><!-- list end -->
-										</div>
-									</div><!-- accordion__tab end -->
-									<!-- accordion__tab start -->
-									<div class="accordion__tab js-accordion-tab">
-										<div class="accordion__btn js-accordion-btn js-pointer-large">
-											<h6 class="accordion__btn-title headline-xxxxs">Photoshoot</h6>
-										</div>
-										<div class="accordion__content js-accordion-content">
-											<!-- list start -->
-											<ul class="list list_center text-color-dadada subhead-xxs">
-												<li class="list__item check red">Copper mug</li>
-												<li class="list__item check red">Vexillologist +1</li>
-												<li class="list__item check red">Prism iPhone</li>
-												<li class="list__item check red">Hella quinoa</li>
-												<li class="list__item check red">Blog af umami</li>
-												<li class="list__item check red">Vinyl snackwave</li>
-												<li class="list__item check red">XOXO drinking</li>
-											</ul><!-- list end -->
-										</div>
-									</div><!-- accordion__tab end -->
-									<!-- accordion__tab start -->
-									<div class="accordion__tab js-accordion-tab">
-										<div class="accordion__btn js-accordion-btn js-pointer-large">
-											<h6 class="accordion__btn-title headline-xxxxs">Web development</h6>
-										</div>
-										<div class="accordion__content js-accordion-content">
-											<!-- list start -->
-											<ul class="list list_center text-color-dadada subhead-xxs">
-												<li class="list__item check red">Copper mug</li>
-												<li class="list__item check red">Vexillologist +1</li>
-												<li class="list__item check red">Prism iPhone</li>
-												<li class="list__item check red">Hella quinoa</li>
-												<li class="list__item check red">Blog af umami</li>
-												<li class="list__item check red">Vinyl snackwave</li>
-												<li class="list__item check red">XOXO drinking</li>
-											</ul><!-- list end -->
-										</div>
-									</div><!-- accordion__tab end -->
-								</div><!-- accordion end -->
-								<div class="padding-top-bottom-50 text-center">
-									<a href="#" class="ellipse-btn js-pointer-large">sign up</a>
-								</div>
-							</div>
-						</div><!-- column end -->
-					</div><!-- flex-container end -->
-				</div><!-- pos-rel end -->
-			</section><!-- pricing end -->
 		</main><!-- main end -->
 
 		<!-- footer start -->
@@ -1829,31 +468,8 @@
 						<!-- column start -->
 						<div class="eight-columns">
 							<h4 class="column-l-r-margin-10 headline-l footer-title">
-								The <span class="text-color-red">Best<br>Agency</span> for<br>Your Businnes
+								<span class="text-color-red">Designing<br>Experiences.</span> Humanizing<br>Technology.
 							</h4>
-						</div><!-- column end -->
-						<!-- column start -->
-						<div class="four-columns footer-nav-mobile-padding">
-							<ul class="column-l-r-margin-10 footer-nav-list js-footer-hover-box">
-								<li>
-									<a href="#" class="footer-nav__btn js-pointer-small js-footer-hover-link">Home</a>
-								</li>
-								<li>
-									<a href="#" class="footer-nav__btn js-pointer-small js-footer-hover-link">About</a>
-								</li>
-								<li>
-									<a href="#" class="footer-nav__btn js-pointer-small js-footer-hover-link">Services</a>
-								</li>
-								<li>
-									<a href="#" class="footer-nav__btn js-pointer-small js-footer-hover-link">Portfolio</a>
-								</li>
-								<li>
-									<a href="#" class="footer-nav__btn js-pointer-small js-footer-hover-link">Blog</a>
-								</li>
-								<li>
-									<a href="#" class="footer-nav__btn js-pointer-small js-footer-hover-link">Contact</a>
-								</li>
-							</ul>
 						</div><!-- column end -->
 					</div><!-- flex-container end -->
 
@@ -1864,8 +480,7 @@
 							<div class="column-l-r-margin-10">
 								<div class="headline-xxxxs">Email</div>
 								<div class="margin-top-10">
-									<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">email@umaya_agency.com</a><br>
-									<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">email@umaya_job.com</a>
+									<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">danruto59@gmail.com</a>
 								</div>
 							</div>
 						</div><!-- column end -->
@@ -1875,8 +490,8 @@
 								<div class="headline-xxxxs">Address</div>
 								<div class="margin-top-10">
 									<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">
-										PO Box 223158 Oliver Street<br>
-										East Victoria 2006 UK
+										PO Box 25-00100<br>
+										Nairobi, KENYA
 									</a>
 								</div>
 							</div>
@@ -1886,8 +501,7 @@
 							<div class="column-l-r-margin-10">
 								<div class="headline-xxxxs">Phone</div>
 								<div class="margin-top-10">
-									<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">+23 8 8532 7834</a><br>
-									<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">+23 8 9635 7335</a>
+									<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">+254700917232</a>
 								</div>
 							</div>
 						</div><!-- column end -->
@@ -1915,12 +529,6 @@
 						</li>
 					</ul><!-- footer-social end -->
 
-					<!-- footer-copyright start -->
-					<div class="footer-copyright text-center pos-abs pos-bottom-center">
-						<p class="copyright-style">
-							&copy; Copyright 2020 Danieli.
-						</p>
-					</div><!-- footer-copyright end -->
 				</div><!-- container end -->
 			</div><!-- pos-rel end -->
 		</footer><!-- footer end -->

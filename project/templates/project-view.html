@@ -1,9 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-	
-<!-- Mirrored from www.nurseitmukaytegin.com/envato-templates/umaya/project_drone.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Jan 2023 16:56:24 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +15,7 @@
 		<link rel="apple-touch-icon" sizes="72x72" href="/static/images/apple-touch-icon-72x72.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="/static/images/apple-touch-icon-114x114.png">
 
-		<title>Danieli</title>
+		<title>{{about.name}} | Product Designer</title>
 
 		<!-- fonts -->
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
@@ -59,27 +57,21 @@
 			<!-- logo start -->
 			<div class="header-logo js-midnight-color js-headroom">
 				<div class="hidden-box">
-					<a href="index.html" class="header-logo__box js-pointer-large js-animsition-link">
-						<img class="header-logo__img white" src="/static/images/logo/logo-white.png" alt="logo">
-						<img class="header-logo__img black" src="/static/images/logo/logo-black.png" alt="logo">
+					<a href="/" class="header-logo__box js-pointer-large js-animsition-link">
+						<img class="header-logo__img white" src="{% static 'images/logo/logo-white.png' %}" alt="logo">
+						<img class="header-logo__img black" src="{% static 'images/logo/logo-black.png' %}" alt="logo">
 					</a>
 				</div>
 			</div><!-- logo end -->
 
-			<!-- menu-icon start -->
-			<div class="menu-icon js-menu-open-close js-pointer-large js-midnight-color js-headroom">
-				<div class="menu-icon__box">
-					<span class="menu-icon__inner"></span>
-					<span class="menu-icon__close"></span>
-				</div>
-			</div><!-- menu-icon end -->
 
 			<!-- header-contact start -->
 			<div class="header-contact js-midnight-color js-headroom">
 				<div class="header-contact__flex">
 					<div class="header-contact__anim">
-						<a href="#" class="header-contact__btn vertical-text center js-pointer-large">
-							<span class="vertical-text__inner"><i class="far fa-comment-dots"></i> Get in touch</span>
+						<a href="mailto:danruto59@gmail.com" class="header-contact__btn vertical-text center js-pointer-large">
+							<span class="vertical-text__inner"><i class="far fa-comment-dots"></i> 
+								Get in touch</span>
 						</a>
 					</div>
 				</div>
@@ -90,43 +82,29 @@
 				<ul class="list list_center list_margin-20px hidden-box">
 					<li class="list__item">
 						<div class="hidden-box d-inline-block">
-							<a href="#" class="anim-slide js-pointer-small">
-								<i class="fab fa-facebook-f"></i>
-							</a>
-						</div>
-					</li>
-					<li class="list__item">
-						<div class="hidden-box d-inline-block">
-							<a href="#" class="anim-slide tr-delay-02 js-pointer-small">
-								<i class="fab fa-twitter"></i>
-							</a>
-						</div>
-					</li>
-					<li class="list__item">
-						<div class="hidden-box d-inline-block">
-							<a href="#" class="anim-slide tr-delay-04 js-pointer-small">
+							<a href="{{about.instagram}}" class="anim-slide tr-delay-04 js-pointer-small" target="_blank">
 								<i class="fab fa-instagram"></i>
 							</a>
 						</div>
 					</li>
 					<li class="list__item">
 						<div class="hidden-box d-inline-block">
-							<a href="#" class="anim-slide tr-delay-06 js-pointer-small">
+							<a href="{{about.behance}}" class="anim-slide tr-delay-06 js-pointer-small" target="_blank">
 								<i class="fab fa-behance"></i>
 							</a>
 						</div>
 					</li>
 					<li class="list__item">
 						<div class="hidden-box d-inline-block">
-							<a href="#" class="anim-slide tr-delay-08 js-pointer-small">
+							<a href="{{about.dribble}}" class="anim-slide tr-delay-08 js-pointer-small" target="_blank">
 								<i class="fab fa-dribbble"></i>
 							</a>
 						</div>
 					</li>
 					<li class="list__item">
 						<div class="hidden-box d-inline-block">
-							<a href="#" class="anim-slide tr-delay-10 js-pointer-small">
-								<i class="fab fa-youtube"></i>
+							<a href="{{about.upwork}}" class="anim-slide tr-delay-10 js-pointer-small">
+								<img src="{% static 'images/about/cib_upwork.svg' %}" alt="" style="width: 14px;"/>
 							</a>
 						</div>
 					</li>
@@ -134,336 +112,10 @@
 			</div><!-- header-social end -->
 		</header><!-- header end -->
 
-		<!-- navigation start -->
-		<nav class="nav-container pos-rel js-dropdown-active-box">
-			<!-- pos-rel start -->
-			<div class="pos-rel height-100perc">
-				<!-- dropdown close btn start -->
-				<div class="dropdown-close">
-					<div class="dropdown-close__inner js-dropdown-close js-pointer-large">
-						<span class="dropdown-close__arrow"></span>
-					</div>
-				</div><!-- dropdown close btn end -->
-
-				<!-- js-nav-slider-bg start -->
-				<div class="js-nav-slider-bg">
-					<!-- swiper-wrapper start -->
-					<div class="swiper-wrapper">
-						<!-- swiper-slide start -->
-						<div class="swiper-slide">
-							<div class="nav-slide-bg" style="background-image:url(/static/images/projects/speakers/revolt-BMest61rcqs-unsplash.jpg)"></div>
-							<div class="bg-overlay-black"></div>
-						</div><!-- swiper-slide end -->
-						<!-- swiper-slide start -->
-						<div class="swiper-slide">
-							<div class="nav-slide-bg" style="background-image:url(/static/images/projects/sneakers/revolt-164_6wVEHfI-unsplash.jpg)"></div>
-							<div class="bg-overlay-black"></div>
-						</div><!-- swiper-slide end -->
-						<!-- swiper-slide start -->
-						<div class="swiper-slide">
-							<div class="nav-slide-bg" style="background-image:url(/static/images/projects/black-bike/josh-nuttall-pIwu5XNvXpk-unsplash.jpg)"></div>
-							<div class="bg-overlay-black"></div>
-						</div><!-- swiper-slide end -->
-						<!-- swiper-slide start -->
-						<div class="swiper-slide">
-							<div class="nav-slide-bg" style="background-image:url(/static/images/projects/pexels/woman-in-black-sexy-top-2825034.jpg)"></div>
-							<div class="bg-overlay-black"></div>
-						</div><!-- swiper-slide end -->
-						<!-- swiper-slide start -->
-						<div class="swiper-slide">
-							<div class="nav-slide-bg" style="background-image:url(/static/images/projects/furniture/goashape-RvyJGaoaWrs-unsplash.jpg)"></div>
-							<div class="bg-overlay-black"></div>
-						</div><!-- swiper-slide end -->
-					</div><!-- swiper-wrapper end -->
-				</div><!-- js-nav-slider-bg end -->
-
-				<!-- menu-box start -->
-				<ul class="menu-box">
-					<!-- nav-btn-box start -->
-					<li class="nav-btn-box js-dropdown-open">
-						<a class="nav-btn large dropdown-hidden-btn js-pointer-large">
-							<span class="nav-btn__inner" data-text="Home">Home</span>
-						</a>
-
-						<!-- dropdown start -->
-						<ul class="menu-box dropdown js-dropdown">
-							<li class="nav-btn-box">
-								<a href="home_creative-agency.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Creative agency">Creative agency</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="home_interior-design.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Interior design">Interior design</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="home_corporate.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Corporate">Corporate</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="home_freelancer.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Freelancer">Freelancer</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="home_musician.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Musician">Musician</span>
-								</a>
-							</li>
-						</ul><!-- dropdown end -->
-					</li><!-- nav-btn-box end -->
-
-					<!-- nav-btn-box start -->
-					<li class="nav-btn-box js-dropdown-open">
-						<a class="nav-btn large dropdown-hidden-btn js-pointer-large">
-							<span class="nav-btn__inner" data-text="Pages">Pages</span>
-						</a>
-
-						<!-- dropdown start -->
-						<ul class="menu-box dropdown js-dropdown">
-							<li class="nav-btn-box">
-								<a href="pages_about-us.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="About us">About us</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="pages_who-we-are.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Who we are">Who we are</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="pages_what-we-do.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="What We Do">What We Do</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="pages_agency.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Agency">Agency</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="pages_services.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Services">Services</span>
-								</a>
-							</li>
-						</ul><!-- dropdown end -->
-					</li><!-- nav-btn-box end -->
-
-					<!-- nav-btn-box start -->
-					<li class="nav-btn-box js-dropdown-open">
-						<a class="nav-btn large dropdown-hidden-btn js-pointer-large">
-							<span class="nav-btn__inner" data-text="Portfolio">Portfolio</span>
-						</a>
-
-						<!-- dropdown start -->
-						<ul class="menu-box dropdown js-dropdown">
-							<li class="nav-btn-box">
-								<a href="portfolio_parallax.html" class="nav-btn small js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Parallax">Parallax</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="portfolio_parallax-2.html" class="nav-btn small js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Parallax 2">Parallax 2</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="portfolio_freemode.html" class="nav-btn small js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Freemode">Freemode</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="portfolio_columns.html" class="nav-btn small js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Columns">Columns</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="portfolio_columns-parallax.html" class="nav-btn small js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Columns parallax">Columns parallax</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="portfolio_fade.html" class="nav-btn small js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Fade">Fade</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="portfolio_fade-horizontal.html" class="nav-btn small js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Fade horizontal">Fade horizontal</span>
-								</a>
-							</li>
-						</ul><!-- dropdown end -->
-					</li><!-- nav-btn-box end -->
-
-					<!-- nav-btn-box start -->
-					<li class="nav-btn-box js-dropdown-slider-open">
-						<a class="nav-btn large dropdown-hidden-btn js-pointer-large">
-							<span class="nav-btn__inner" data-text="Projects">Projects</span>
-						</a>
-
-						<!-- dropdown start -->
-						<div class="dropdown js-dropdown">
-							<!-- js-nav-slider start -->
-							<div class="js-nav-slider">
-								<!-- swiper-wrapper start -->
-								<ul class="swiper-wrapper">
-									<!-- swiper-slide start -->
-									<li class="nav-btn-box swiper-slide">
-										<div class="hidden-box">
-											<a href="project_drone.html" class="nav-btn small js-animsition-link js-pointer-large">
-												<span class="nav-btn__inner" data-text="Speakers">Speakers</span>
-											</a>
-										</div>
-									</li><!-- swiper-slide end -->
-									<!-- swiper-slide start -->
-									<li class="nav-btn-box swiper-slide">
-										<div class="hidden-box">
-											<a href="project_drone.html" class="nav-btn small js-animsition-link js-pointer-large">
-												<span class="nav-btn__inner" data-text="Sneakers">Sneakers</span>
-											</a>
-										</div>
-									</li><!-- swiper-slide end -->
-									<!-- swiper-slide start -->
-									<li class="nav-btn-box swiper-slide">
-										<div class="hidden-box">
-											<a href="project_drone.html" class="nav-btn small js-animsition-link js-pointer-large">
-												<span class="nav-btn__inner" data-text="Black Bike">Black Bike</span>
-											</a>
-										</div>
-									</li><!-- swiper-slide end -->
-									<!-- swiper-slide start -->
-									<li class="nav-btn-box swiper-slide">
-										<div class="hidden-box">
-											<a href="project_drone.html" class="nav-btn small js-animsition-link js-pointer-large">
-												<span class="nav-btn__inner" data-text="Pexels">Pexels</span>
-											</a>
-										</div>
-									</li><!-- swiper-slide end -->
-									<!-- swiper-slide start -->
-									<li class="nav-btn-box swiper-slide">
-										<div class="hidden-box">
-											<a href="project_drone.html" class="nav-btn small js-animsition-link js-pointer-large">
-												<span class="nav-btn__inner" data-text="Furniture">Furniture</span>
-											</a>
-										</div>
-									</li><!-- swiper-slide end -->
-								</ul><!-- swiper-wrapper end -->
-
-								<!-- swiper-button-prev start -->
-								<div class="swiper-button-prev-box">
-									<div class="dropdown-slider-controls">
-										<div class="swiper-button-prev"></div>
-									</div>
-								</div><!-- swiper-button-prev end -->
-								<!-- swiper-button-next start -->
-								<div class="swiper-button-next-box">
-									<div class="dropdown-slider-controls">
-										<div class="swiper-button-next"></div>
-									</div>
-								</div><!-- swiper-button-next end -->
-
-								<!-- swiper-pagination start -->
-								<div class="pagination-box">
-									<div class="dropdown-slider-controls">
-										<div class="swiper-pagination counter-pagination"></div>
-									</div>
-								</div><!-- swiper-pagination end -->
-							</div><!-- js-nav-slider end -->
-						</div><!-- dropdown end -->
-					</li><!-- nav-btn-box end -->
-
-					<!-- nav-btn-box start -->
-					<li class="nav-btn-box js-dropdown-open">
-						<a class="nav-btn large dropdown-hidden-btn js-pointer-large">
-							<span class="nav-btn__inner" data-text="Blog">Blog</span>
-						</a>
-
-						<!-- dropdown start -->
-						<ul class="menu-box dropdown js-dropdown">
-							<li class="nav-btn-box">
-								<a href="blog_sidebar.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Sidebar">Sidebar</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="blog_grid.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Grid">Grid</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="blog_sliders.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Sliders">Sliders</span>
-								</a>
-							</li>
-							<li class="nav-btn-box">
-								<a href="blog_filter.html" class="nav-btn js-animsition-link js-pointer-large">
-									<span class="nav-btn__inner" data-text="Filter">Filter</span>
-								</a>
-							</li>
-						</ul><!-- dropdown end -->
-					</li><!-- nav-btn-box end -->
-
-					<!-- nav-btn-box start -->
-					<li class="nav-btn-box">
-						<a href="contact.html" class="nav-btn large dropdown-hidden-btn js-animsition-link js-pointer-large">
-							<span class="nav-btn__inner" data-text="Contact">Contact</span>
-						</a>
-					</li><!-- nav-btn-box end -->
-				</ul><!-- menu-box end -->
-
-				<!-- nav-information start -->
-				<div class="nav-information">
-					<!-- nav-email start -->
-					<div>
-						<div class="hidden-box d-inline-block">
-							<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Email</div>
-						</div>
-						<div class="nav-fade-anim js-nav-anim margin-top-10">
-							<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">email@umaya_agency.com</a><br>
-							<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">email@umaya_job.com</a>
-						</div>
-					</div><!-- nav-email end -->
-
-					<!-- nav-address start -->
-					<div>
-						<div class="hidden-box d-inline-block">
-							<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Address</div>
-						</div>
-						<div class="nav-fade-anim js-nav-anim margin-top-10">
-							<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">
-								PO Box 223158 Oliver Street<br>
-								East Victoria 2006 UK
-							</a>
-						</div>
-					</div><!-- nav-address end -->
-
-					<!-- nav-phone start -->
-					<div>
-						<div class="hidden-box d-inline-block">
-							<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Phone</div>
-						</div>
-						<div class="nav-fade-anim js-nav-anim margin-top-10">
-							<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">+23 8 8532 7834</a><br>
-							<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">+23 8 9635 7335</a>
-						</div>
-					</div><!-- nav-phone end -->
-				</div><!-- nav-information end -->
-
-				<!-- nav-copyright start -->
-				<div class="nav-copyright text-right">
-					<p class="copyright-style nav-fade-anim js-nav-anim">
-						&copy; Copyright 2020 UMAYA. Template by <a href="#" class="text-weight-700 js-pointer-small">Jinna Gik</a>
-					</p>
-				</div><!-- nav-copyright end -->
-			</div><!-- pos-rel end -->
-		</nav><!-- navigation end -->
-
 		<!-- main start -->
 		<main class="js-animsition-overlay" data-animsition-overlay="true">
 			<!-- pos-rel start -->
-			<section id="up" class="pos-rel bg-img-cover" style="background-image:url(/static/images/projects/drone/quadcopter-on-wooden-surface-1601217.jpg)">
+			<section id="up" class="pos-rel bg-img-cover" style="background-image:url({{banner}})">
 				<!-- bg-overlay -->
 				<div class="bg-overlay-black"></div>
 				<!-- pos-rel start -->
@@ -471,24 +123,24 @@
 					<div class="padding-top-bottom-120 width-100perc after-preloader-anim">
 						<!-- title start -->
 						<h2 class="headline-xxxxl text-center hidden-box">
-							<span class="anim-slide">Drone</span>
+							<span class="anim-slide">{{title}}</span>
 						</h2><!-- title end -->
 
 						<!-- description start -->
 						<div class="flex-container description">
 							<div class="four-columns column-50-100 padding-top-1 text-center">
 								<span class="hidden-box d-inline-block">
-									<span class="subhead-xxs anim-reveal">Marketing</span>
+									<span class="subhead-xxs anim-reveal">{{role}}</span>
 								</span>
 							</div>
 							<div class="four-columns column-50-100 padding-top-1 text-center">
 								<span class="hidden-box d-inline-block">
-									<span class="subhead-xxs anim-reveal tr-delay-02">Website</span>
+									<span class="subhead-xxs anim-reveal tr-delay-02">{{industry}}</span>
 								</span>
 							</div>
 							<div class="four-columns column-50-100 padding-top-1 text-center">
 								<span class="hidden-box d-inline-block">
-									<span class="subhead-xxs anim-reveal tr-delay-04">London 2020</span>
+									<span class="subhead-xxs anim-reveal tr-delay-04">{{date}}</span>
 								</span>
 							</div>
 						</div><!-- description end -->
@@ -506,34 +158,18 @@
 						<div class="four-columns column-100-100 padding-top-60">
 							<!-- list start -->
 							<ul class="list js-scrollanim">
+								{% for tag in tags %}
 								<li class="list__item red dot hidden-box">
-									<div class="subhead-xxs anim-slide">Graphic Design</div>
+									<div class="subhead-xxs anim-slide">{{tag}}</div>
 								</li>
-								<li class="list__item red dot hidden-box">
-									<div class="subhead-xxs anim-slide tr-delay-01">User Interface Design</div>
-								</li>
-								<li class="list__item red dot hidden-box">
-									<div class="subhead-xxs anim-slide tr-delay-02">User Experience Design</div>
-								</li>
-								<li class="list__item red dot hidden-box">
-									<div class="subhead-xxs anim-slide tr-delay-03">Web Design</div>
-								</li>
-								<li class="list__item red dot hidden-box">
-									<div class="subhead-xxs anim-slide tr-delay-04">Motion Design</div>
-								</li>
-								<li class="list__item red dot hidden-box">
-									<div class="subhead-xxs anim-slide tr-delay-05">Front-end Development</div>
-								</li>
-								<li class="list__item red dot hidden-box">
-									<div class="subhead-xxs anim-slide tr-delay-06">Back-end Development</div>
-								</li>
+								{% endfor %}
 							</ul><!-- list end -->
 						</div><!-- column end -->
 
 						<!-- column start -->
 						<div class="eight-columns column-100-100 padding-top-60">
 							<div class="column-l-margin-40-999">
-								<p class="body-text-m anim-text-reveal js-scrollanim">Retro jean shorts cronut lumbersexual mixtape hella you probably haven't heard of them austin williamsburg af mustache pinterest. Mixtape kinfolk cray, wolf palo santo brunch iPhone. 3 wolf moon microdosing scenester, tilde roof party affogato typewriter celiac echo park craft beer bicycle rights man braid trust fund four dollar toast gentrify. IPhone humblebrag kale chips hell of. Brooklyn whatever chia deep v slow-carb lomo put a bird on. Austin fam chia cold-pressed raw denim.</p>
+								<p class="body-text-m anim-text-reveal js-scrollanim">{{description}}</p>
 							</div>
 						</div><!-- column end -->
 					</div><!-- flex-container end -->
