@@ -85,6 +85,7 @@ class Project(models.Model):
 							unique=True, blank=True, primary_key=True)
 	banner_image = models.CharField(max_length=1055, blank=True, null=True, help_text="To appear as the big image on top of the page when you open a single project")
 	image = models.CharField(max_length=1055, blank=True, null=True, help_text="To appear as the preview image on the home page")
+	central_image = models.CharField(max_length=1055, blank=True, null=True, help_text="To appear between the sections in project view")
 	video = models.CharField(max_length=1055, blank=True, null=True)
 	active = models.BooleanField(default=False)
 	link = models.CharField(max_length=1000)

@@ -55,7 +55,9 @@ def get_home(request):
 
 def get_project(request, id):
     project = Project.objects.filter(pk=id).first()
+    next_project = Project.objects.exclude(pk=id).first()
     about = About.objects.first()
+    first_section = project.sections.first()
     
     about_data = {
         "instagram": about.instagram,
@@ -66,6 +68,11 @@ def get_project(request, id):
         "intro": about.intro
     }
     context = {
+        "next_project":{
+            "id": next_project.pk,
+            "title": next_project.title,
+            "image": next_project.image,
+        } if next_project else None,
         "title": project.title,
         "role": project.role,
         "description": project.description,
@@ -74,10 +81,21 @@ def get_project(request, id):
         "components": project.components,
         "banner": project.banner_image,
         "image": project.image,
+        "central_image": project.central_image,
         "link": project.link,
         "video": project.video,
         "date": project.created_at,
         "proj_type": project.project_type.non_verbose_name,
+        "first_section": {
+            "title": first_section.title,
+            "description": first_section.description,
+            "images": [img.url for img in first_section.images.all()]
+        },
+        "other_sections": [{
+            "title": section.title,
+            "description": section.description,
+            "images": [img.url for img in section.images.all()]
+        } for section in project.sections.all().exclude(pk=first_section.id)],
         "industry": project.industry,
 
         "about": about_data,

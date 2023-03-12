@@ -187,10 +187,10 @@
 							<div class="column-l-r-margin-10-999">
 								<h2 class="headline-xxs text-color-black js-scrollanim">
 									<span class="hidden-box d-block">
-										<span class="anim-slide">Austin fam chia</span>
+										<span class="anim-slide">{{first_section.title}}</span>
 									</span>
 									<span class="hidden-box d-block">
-										<span class="anim-slide tr-delay-01">cold-pressed raw</span>
+										<!-- <span class="anim-slide tr-delay-01">cold-pressed raw</span> -->
 									</span>
 								</h2>
 							</div>
@@ -199,40 +199,28 @@
 						<!-- column start -->
 						<div class="eight-columns column-100-100 padding-top-20">
 							<div class="column-l-r-margin-10-999">
-								<p class="body-text-s text-color-black anim-text-reveal js-scrollanim">3 wolf moon microdosing scenester, tilde roof party affogato typewriter celiac echo park craft beer bicycle rights man braid trust fund four dollar toast gentrify. Mixtape kinfolk cray, wolf palo santo brunch iPhone. Retro jean shorts cronut lumbersexual mixtape hella you probably haven't heard of them austin williamsburg af mustache pinterest. IPhone humblebrag kale chips hell of. Brooklyn whatever chia deep v slow-carb lomo put a bird on. Austin fam chia cold-pressed raw denim.</p>
+								<p class="body-text-s text-color-black anim-text-reveal js-scrollanim">{{first_section.description}}</p>
 							</div>
 						</div><!-- column end -->
-
+						{% for image in first_section.images %}
 						<!-- column start -->
 						<div class="four-columns column-100-100 padding-top-60">
-							<a href="/static/images/projects/drone/pexels-photo-1093236.jpg" class="column-l-r-margin-10-999 d-block js-pointer-zoom js-photo-popup">
-								<img src="/static/images/projects/drone/pexels-photo-1093236.jpg" alt="project image">
+							<a href="#" class="column-l-r-margin-10-999 d-block js-pointer-zoom js-photo-popup">
+								<img src="{{image}}" alt="project image">
 							</a>
 						</div><!-- column end -->
-
-						<!-- column start -->
-						<div class="four-columns column-100-100 padding-top-60">
-							<a href="/static/images/projects/drone/pexels-photo-544491.jpg" class="column-l-r-margin-10-999 d-block js-pointer-zoom js-photo-popup">
-								<img src="/static/images/projects/drone/pexels-photo-544491.jpg" alt="project image">
-							</a>
-						</div><!-- column end -->
-
-						<!-- column start -->
-						<div class="four-columns column-100-100 padding-top-60">
-							<a href="/static/images/projects/drone/air-aircraft-aviate-529598.jpg" class="column-l-r-margin-10-999 d-block js-pointer-zoom js-photo-popup">
-								<img src="/static/images/projects/drone/air-aircraft-aviate-529598.jpg" alt="project image">
-							</a>
-						</div><!-- column end -->
+						{% endfor %}
 					</div><!-- flex-container end -->
 				</div><!-- pos-rel end -->
 			</section><!-- pos-rel end -->
 
 			<!-- pos-rel start -->
 			<div class="pos-rel">
-				<img src="/static/images/projects/drone/pexels-photo-257699.jpg" alt="project image">
+				<img src="{{central_image}}" alt="project image">
 			</div><!-- pos-rel end -->
 
 			<!-- pos-rel start -->
+			{% for section in other_sections %}
 			<section class="pos-rel section-bg-light-1" data-midnight="black">
 				<!-- pos-rel start -->
 				<div class="pos-rel padding-top-100 padding-bottom-120">
@@ -243,10 +231,10 @@
 							<div class="column-l-r-margin-10-999">
 								<h2 class="headline-xxs text-color-black js-scrollanim">
 									<span class="hidden-box d-block">
-										<span class="anim-slide">Beer bicycle rights</span>
+										<span class="anim-slide">{{section.title}}</span>
 									</span>
 									<span class="hidden-box d-block">
-										<span class="anim-slide tr-delay-01">man braid trust</span>
+										<!-- <span class="anim-slide tr-delay-01"></span> -->
 									</span>
 								</h2>
 							</div>
@@ -255,100 +243,27 @@
 						<!-- column start -->
 						<div class="eight-columns column-100-100 padding-top-20">
 							<div class="column-l-r-margin-10-999">
-								<p class="body-text-s text-color-black anim-text-reveal js-scrollanim">IPhone humblebrag kale chips hell of. Brooklyn whatever chia deep v slow-carb lomo put a bird on. Austin fam chia cold-pressed raw denim. 3 wolf moon microdosing scenester, tilde roof party affogato typewriter celiac echo park craft beer bicycle rights man braid trust fund four dollar toast gentrify. Mixtape kinfolk cray, wolf palo santo brunch iPhone. Retro jean shorts cronut lumbersexual mixtape hella you probably haven't heard of them austin williamsburg af mustache pinterest.</p>
+								<p class="body-text-s text-color-black anim-text-reveal js-scrollanim">{{section.description}}</p>
 							</div>
 						</div><!-- column end -->
 					</div><!-- flex-container end -->
 
 					<!-- container start -->
 					<div class="container small">
+						{% for img in section.images %}
 						<div class="padding-top-60">
-							<a href="/static/images/projects/drone/white-drone-2044044.jpg" class="d-block js-pointer-zoom js-photo-popup">
-								<img src="/static/images/projects/drone/white-drone-2044044.jpg" alt="project image">
+							<a href="#" class="d-block js-pointer-zoom js-photo-popup">
+								<img src="{{img}}" alt="project image">
 							</a>
 						</div>
-						<div class="padding-top-60">
-							<a href="/static/images/projects/drone/white-and-black-dji-mavic-pro-1381541.jpg" class="d-block js-pointer-zoom js-photo-popup">
-								<img src="/static/images/projects/drone/white-and-black-dji-mavic-pro-1381541.jpg" alt="project image">
-							</a>
-						</div>
-						<div class="padding-top-60">
-							<a href="/static/images/projects/drone/gray-dji-mavic-drone-1852984.jpg" class="d-block js-pointer-zoom js-photo-popup">
-								<img src="/static/images/projects/drone/gray-dji-mavic-drone-1852984.jpg" alt="project image">
-							</a>
-						</div>
-						<div class="padding-top-60">
-							<a href="/static/images/projects/drone/black-drone-916015.jpg" class="d-block js-pointer-zoom js-photo-popup">
-								<img src="/static/images/projects/drone/black-drone-916015.jpg" alt="project image">
-							</a>
-						</div>
+						{% endfor %}
 					</div><!-- container end -->
 				</div><!-- pos-rel end -->
 			</section><!-- pos-rel end -->
-
-			<!-- pos-rel start -->
-			<section class="pos-rel section-bg-light-2" data-midnight="black">
-				<!-- pos-rel start -->
-				<div class="pos-rel padding-top-60 padding-bottom-120">
-					<!-- flex-container start -->
-					<div class="container flex-container flex-align-end">
-						<!-- columns start -->
-						<div class="four-columns column-100-100 padding-top-60">
-							<div class="column-l-r-margin-10-999 js-scrollanim">
-								<h2 class="headline-xxs text-color-black">
-									<span class="hidden-box d-block">
-										<span class="anim-slide">3 wolf moon</span>
-									</span>
-									<span class="hidden-box d-block">
-										<span class="anim-slide tr-delay-01">microdosing scenester</span>
-									</span>
-								</h2>
-								<p class="body-text-xs text-color-black margin-top-20 anim-text-reveal tr-delay-02">Mixtape kinfolk cray, wolf palo santo brunch iPhone. Retro jean shorts cronut lumbersexual mixtape hella you probably haven't heard of them austin williamsburg af mustache pinterest. IPhone humblebrag kale chips hell of. Brooklyn whatever chia deep v slow-carb lomo put a bird on. Austin fam chia cold-pressed raw denim. 3 wolf moon microdosing scenester, tilde roof party affogato typewriter celiac echo park craft beer bicycle rights man braid trust fund four dollar toast gentrify.</p>
-							</div>
-						</div><!-- columns end -->
-
-						<!-- columns start -->
-						<div class="eight-columns column-100-100 padding-top-60">
-							<a href="/static/images/projects/drone/two-assorted-quadcopter-drones-with-controllers-810493.jpg" class="column-l-r-margin-10-999 d-block js-pointer-zoom js-photo-popup">
-								<img src="/static/images/projects/drone/two-assorted-quadcopter-drones-with-controllers-810493.jpg" alt="project image">
-							</a>
-						</div><!-- columns end -->
-					</div><!-- flex-container end -->
-				</div><!-- pos-rel end -->
-			</section><!-- pos-rel end -->
-
-			<!-- pos-rel start -->
-			<div class="pos-rel">
-				<img src="/static/images/projects/drone/aerial-aeroplane-blur-close-up-378268.jpg" alt="project image">
-			</div><!-- pos-rel end -->
-
-			<!-- pos-rel start -->
-			<section class="pos-rel section-bg-dark-1">
-				<!-- pos-rel start -->
-				<div class="pos-rel flex-min-height-100vh">
-					<!-- flex-container start -->
-					<div class="container small flex-container reverse padding-top-100 padding-bottom-120">
-						<!-- column start -->
-						<div class="four-columns column-100-100 padding-top-20">
-							<h5 class="margin-left-50 js-scrollanim">
-								<span class="subhead-xs anim-text-double-fill" data-text="Jason Hardeman">Jason Hardeman</span><br>
-								<span class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-01" data-text="Creative director">Creative director</span><br>
-								<span class="headline-xxxxs anim-text-double-fill invert tr-delay-02" data-text="XOXO production LTD">XOXO production LTD</span>
-							</h5>
-						</div><!-- column end -->
-
-						<!-- column start -->
-						<div class="eight-columns column-100-100 padding-top-20">
-							<div class="column-l-margin-40-999">
-								<blockquote class="quote body-text-s anim-text-reveal js-scrollanim">Synth keytar distillery offal man braid sartorial 90's blue bottle fanny pack kale chips craft beer pok pok chambray. Yuccie listicle bicycle rights put a bird on it lyft flexitarian direct trade meggings vape chicharrones green juice man bun. Organic craft beer chambray, migas vinyl chartreuse godard palo santo lomo readymade vexillologist. DIY occupy craft beer 3 wolf moon, VHS cornhole master cleanse irony paleo vaporware butcher chicharrones.</blockquote>
-							</div>
-						</div><!-- column end -->
-					</div><!-- flex-container end -->
-				</div><!-- pos-rel end -->
-			</section><!-- pos-rel end -->
-
+			{% endfor %}
+			{% if next_project %}
 			<!-- next project start -->
-			<section class="pos-rel bg-img-cover" style="background-image:url(/static/images/projects/beauty-lab/beauty-beauty-product-cosmetics-makeup-2845213.jpg)">
+			<section class="pos-rel bg-img-cover" style="background-image:url({{next_project.image}})">
 				<!-- bg-overlay -->
 				<div class="bg-overlay-black"></div>
 				<!-- pos-rel start -->
@@ -359,13 +274,13 @@
 
 							<!-- title start -->
 							<div class="margin-top-10 margin-bottom-30">
-								<a href="project_beauty-lab.html" class="d-inline-block hidden-box js-pointer-large js-animsition-link">
-									<h2 class="headline-xxxxl anim-slide">Beauty Lab</h2>
+								<a href="{% url 'project-view' id=next_project.id %}" class="d-inline-block hidden-box js-pointer-large js-animsition-link">
+									<h2 class="headline-xxxxl anim-slide">{{next_project.title}}</h2>
 								</a>
 							</div><!-- title end -->
 
 							<!-- button start -->
-							<a href="project_beauty-lab.html" class="skew-btn js-pointer-large js-animsition-link anim-fade tr-delay-04">
+							<a href="{% url 'project-view' id=next_project.id %}" class="skew-btn js-pointer-large js-animsition-link anim-fade tr-delay-04">
 								<span class="skew-btn__box">
 									<span class="skew-btn__content">See the case</span>
 									<span class="skew-btn__arrow"></span>
@@ -375,7 +290,9 @@
 					</div>
 				</div><!-- pos-rel end -->
 			</section><!-- next project end -->
+			{% endif %}
 		</main><!-- main end -->
+
 
 		<!-- footer start -->
 		<footer class="fixed-footer pos-rel bg-img-cover js-fixed-footer" style="background-image:url(/static/images/backgrounds/man-holding-videocamera-standing-in-studio-3379943.jpg)">
@@ -387,7 +304,7 @@
 				<div class="container padding-top-bottom-120">
 					<!-- footer-logo start -->
 					<div class="footer-logo footer-logo-desktop-hidden padding-bottom-90">
-						<img class="footer-logo__img" src="/static/images/logo/logo-white.png" alt="logo">
+						<img class="footer-logo__img" src="{% static 'images/logo/logo-white.png' %}" alt="logo">
 					</div><!-- footer-logo end -->
 
 					<!-- flex-container start -->
@@ -395,31 +312,8 @@
 						<!-- column start -->
 						<div class="eight-columns">
 							<h4 class="column-l-r-margin-10 headline-l footer-title">
-								The <span class="text-color-red">Best<br>Agency</span> for<br>Your Businnes
+								<span class="text-color-red">Designing<br>Experiences.</span> Humanizing<br>Technology.
 							</h4>
-						</div><!-- column end -->
-						<!-- column start -->
-						<div class="four-columns footer-nav-mobile-padding">
-							<ul class="column-l-r-margin-10 footer-nav-list js-footer-hover-box">
-								<li>
-									<a href="#" class="footer-nav__btn js-pointer-small js-footer-hover-link">Home</a>
-								</li>
-								<li>
-									<a href="#" class="footer-nav__btn js-pointer-small js-footer-hover-link">About</a>
-								</li>
-								<li>
-									<a href="#" class="footer-nav__btn js-pointer-small js-footer-hover-link">Services</a>
-								</li>
-								<li>
-									<a href="#" class="footer-nav__btn js-pointer-small js-footer-hover-link">Portfolio</a>
-								</li>
-								<li>
-									<a href="#" class="footer-nav__btn js-pointer-small js-footer-hover-link">Blog</a>
-								</li>
-								<li>
-									<a href="#" class="footer-nav__btn js-pointer-small js-footer-hover-link">Contact</a>
-								</li>
-							</ul>
 						</div><!-- column end -->
 					</div><!-- flex-container end -->
 
@@ -430,8 +324,7 @@
 							<div class="column-l-r-margin-10">
 								<div class="headline-xxxxs">Email</div>
 								<div class="margin-top-10">
-									<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">email@umaya_agency.com</a><br>
-									<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">email@umaya_job.com</a>
+									<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">danruto59@gmail.com</a>
 								</div>
 							</div>
 						</div><!-- column end -->
@@ -441,8 +334,8 @@
 								<div class="headline-xxxxs">Address</div>
 								<div class="margin-top-10">
 									<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">
-										PO Box 223158 Oliver Street<br>
-										East Victoria 2006 UK
+										PO Box 25-00100<br>
+										Nairobi, KENYA
 									</a>
 								</div>
 							</div>
@@ -452,8 +345,7 @@
 							<div class="column-l-r-margin-10">
 								<div class="headline-xxxxs">Phone</div>
 								<div class="margin-top-10">
-									<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">+23 8 8532 7834</a><br>
-									<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">+23 8 9635 7335</a>
+									<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">+254700917232</a>
 								</div>
 							</div>
 						</div><!-- column end -->
@@ -481,12 +373,6 @@
 						</li>
 					</ul><!-- footer-social end -->
 
-					<!-- footer-copyright start -->
-					<div class="footer-copyright text-center pos-abs pos-bottom-center">
-						<p class="copyright-style">
-							&copy; Copyright 2020 UMAYA. Template by <a href="#" class="text-weight-700 js-pointer-small">Jinna Gik</a>
-						</p>
-					</div><!-- footer-copyright end -->
 				</div><!-- container end -->
 			</div><!-- pos-rel end -->
 		</footer><!-- footer end -->
